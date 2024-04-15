@@ -17,6 +17,8 @@
         "ext-pdo": "*",
         "ext-pdo_mysql": "*",
         "ext-tokenizer": "*",
+        "bagisto/graphql-api" : "dev-main",
+        "wontonee/razorpay" : "main",
         "astrotomic/laravel-translatable": "^11.0.0",
         "barryvdh/laravel-dompdf": "^2.0.0",
         "diglactic/laravel-breadcrumbs": "^8.0",
