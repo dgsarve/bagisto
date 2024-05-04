@@ -92,7 +92,7 @@
                         class="mt-8 flex flex-wrap gap-20 pb-8 max-1060:flex-col"
                         v-if="cart?.items?.length"
                     >
-                        <div class="grid flex-1 gap-6">
+                        <div class="flex flex-1 flex-col gap-6">
 
                             {!! view_render_event('bagisto.shop.checkout.cart.cart_mass_actions.before') !!}
 
@@ -203,10 +203,8 @@
                                             {!! view_render_event('bagisto.shop.checkout.cart.item_name.before') !!}
 
                                             <a :href="`{{ route('shop.product_or_category.index', '') }}/${item.product_url_key}`">
-                                                <p 
-                                                    class="text-base font-medium" 
-                                                    v-text="item.name"
-                                                >
+                                                <p class="text-base font-medium">
+                                                    @{{ item.name }}
                                                 </p>
                                             </a>
 
@@ -253,10 +251,8 @@
                                             {!! view_render_event('bagisto.shop.checkout.cart.formatted_total.before') !!}
 
                                             <div class="sm:hidden">
-                                                <p 
-                                                    class="text-lg font-semibold" 
-                                                    v-text="item.formatted_total"
-                                                >
+                                                <p class="text-lg font-semibold">
+                                                    @{{ item.formatted_total }}
                                                 </p>
                                                 
                                                 <span
@@ -288,10 +284,8 @@
 
                                         {!! view_render_event('bagisto.shop.checkout.cart.total.before') !!}
 
-                                        <p 
-                                            class="text-lg font-semibold" 
-                                            v-text="item.formatted_total"
-                                        >
+                                        <p class="text-lg font-semibold">
+                                            @{{ item.formatted_total }}
                                         </p>
 
                                         {!! view_render_event('bagisto.shop.checkout.cart.total.after') !!}
@@ -418,6 +412,10 @@
                                 }
                             })
                             .catch(error => {});
+                    },
+
+                    setCart(cart) {
+                        this.cart = cart;
                     },
 
                     selectAll() {

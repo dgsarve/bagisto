@@ -73,64 +73,98 @@ return [
             'home' => 'ホーム',
 
             'profile' => [
-                'confirm-password'        => 'パスワードを確認',
-                'current-password'        => '現在のパスワード',
-                'delete'                  => '削除',
-                'delete-failed'           => '顧客を削除する際にエラーが発生しました。',
-                'delete-profile'          => 'プロフィールを削除',
-                'delete-success'          => '顧客が正常に削除されました',
-                'dob'                     => '生年月日',
-                'edit'                    => '編集',
-                'edit-profile'            => 'プロフィールを編集',
-                'edit-success'            => 'プロフィールが正常に更新されました',
-                'email'                   => 'メール',
-                'enter-password'          => 'パスワードを入力してください',
-                'female'                  => '女性',
-                'first-name'              => '名',
-                'gender'                  => '性別',
-                'last-name'               => '姓',
-                'male'                    => '男性',
-                'new-password'            => '新しいパスワード',
-                'order-pending'           => '注文が保留中または処理中のため、顧客アカウントを削除できません。',
-                'other'                   => 'その他',
-                'phone'                   => '電話',
-                'save'                    => '保存',
-                'select-gender'           => '性別を選択',
-                'subscribe-to-newsletter' => 'ニュースレターに登録',
-                'title'                   => 'プロフィール',
-                'unmatch'                 => '古いパスワードが一致しません。',
-                'wrong-password'          => '間違ったパスワード！',
+                'index' => [
+                    'delete'         => '削除',
+                    'delete-failed'  => '顧客の削除中にエラーが発生しました。',
+                    'delete-profile' => 'プロフィールを削除',
+                    'delete-success' => '顧客が正常に削除されました',
+                    'dob'            => '生年月日',
+                    'edit'           => '編集',
+                    'edit-success'   => 'プロフィールが正常に更新されました',
+                    'email'          => 'メール',
+                    'enter-password' => 'パスワードを入力してください',
+                    'first-name'     => '名',
+                    'gender'         => '性別',
+                    'last-name'      => '姓',
+                    'order-pending'  => '注文が保留中または処理中の状態であるため、顧客アカウントを削除することはできません。',
+                    'title'          => 'プロフィール',
+                    'unmatched'      => '古いパスワードが一致しません。',
+                    'wrong-password' => 'パスワードが間違っています！',
+                ],
+
+                'edit' => [
+                    'confirm-password'        => 'パスワードを確認',
+                    'current-password'        => '現在のパスワード',
+                    'dob'                     => '生年月日',
+                    'edit'                    => '編集',
+                    'edit-profile'            => 'プロフィールを編集',
+                    'email'                   => 'メール',
+                    'female'                  => '女性',
+                    'first-name'              => '名',
+                    'gender'                  => '性別',
+                    'last-name'               => '姓',
+                    'male'                    => '男性',
+                    'new-password'            => '新しいパスワード',
+                    'other'                   => 'その他',
+                    'phone'                   => '電話',
+                    'save'                    => '保存',
+                    'subscribe-to-newsletter' => 'ニュースレターに登録する',
+                ],
             ],
 
             'addresses' => [
-                'add-address'      => '住所を追加',
-                'address-1'        => '住所1',
-                'address-2'        => '住所2',
-                'city'             => '市',
-                'company-name'     => '会社名',
-                'country'          => '国',
-                'create-success'   => '住所が正常に追加されました。',
-                'default-address'  => 'デフォルトの住所',
-                'default-delete'   => 'デフォルトの住所は変更できません。',
-                'delete'           => '削除',
-                'delete-success'   => '住所が正常に削除されました',
-                'edit'             => '編集',
-                'edit-address'     => '住所を編集',
-                'edit-success'     => '住所が正常に更新されました。',
-                'email'            => '電子メール',
-                'empty-address'    => 'アカウントに住所がまだ追加されていません。',
-                'first-name'       => '名',
-                'last-name'        => '姓',
-                'phone'            => '電話',
-                'post-code'        => '郵便番号',
-                'save'             => '保存',
-                'security-warning' => '不正なアクティビティが検出されました！',
-                'select-country'   => '国を選択',
-                'set-as-default'   => 'デフォルトに設定',
-                'state'            => '州',
-                'street-address'   => '住所',
-                'title'            => '住所',
-                'vat-id'           => 'VAT ID',
+                'index' => [
+                    'add-address'      => '住所を追加',
+                    'create-success'   => '住所が正常に追加されました。',
+                    'default-address'  => 'デフォルトの住所',
+                    'default-delete'   => 'デフォルトの住所は変更できません。',
+                    'delete'           => '削除',
+                    'delete-success'   => '住所が正常に削除されました',
+                    'edit'             => '編集',
+                    'edit-success'     => '住所が正常に更新されました。',
+                    'empty-address'    => 'アカウントにまだ住所が追加されていません。',
+                    'security-warning' => '不審なアクティビティが検出されました！',
+                    'set-as-default'   => 'デフォルトに設定',
+                    'title'            => '住所',
+                    'update-success'   => '住所が正常に更新されました。',
+                ],
+
+                'create' => [
+                    'add-address'    => '住所を追加',
+                    'city'           => '市区町村',
+                    'company-name'   => '会社名',
+                    'country'        => '国',
+                    'email'          => 'メール',
+                    'first-name'     => '名',
+                    'last-name'      => '姓',
+                    'phone'          => '電話',
+                    'post-code'      => '郵便番号',
+                    'save'           => '保存',
+                    'select-country' => '国を選択',
+                    'set-as-default' => 'デフォルトに設定',
+                    'state'          => '都道府県',
+                    'street-address' => '住所',
+                    'title'          => '住所',
+                    'vat-id'         => 'VAT番号',
+                ],
+
+                'edit' => [
+                    'city'           => '市区町村',
+                    'company-name'   => '会社名',
+                    'country'        => '国',
+                    'edit'           => '編集',
+                    'email'          => 'メール',
+                    'first-name'     => '名',
+                    'last-name'      => '姓',
+                    'phone'          => '電話',
+                    'post-code'      => '郵便番号',
+                    'save'           => '保存',
+                    'select-country' => '国を選択',
+                    'state'          => '都道府県',
+                    'street-address' => '住所',
+                    'title'          => '住所',
+                    'vat-id'         => 'VAT番号',
+                ],
             ],
 
             'orders' => [
@@ -163,6 +197,7 @@ return [
                     'cancel-confirm-msg' => 'この注文をキャンセルしてもよろしいですか？',
                     'cancel-error'       => '注文をキャンセルできません。',
                     'cancel-success'     => '注文がキャンセルされました',
+                    'contact'            => '連絡先',
                     'page-title'         => '注文 #:order_id',
                     'payment-method'     => '支払い方法',
                     'reorder-btn-title'  => '並べ替える',
@@ -347,9 +382,11 @@ return [
                 'welcome-guest'     => 'ゲストさん、ようこそ',
                 'wishlist'          => 'ウィッシュリスト',
 
-                'desktop'           => [
+                'desktop' => [
                     'top' => [
                         'default-locale' => 'デフォルトのロケール',
+                        'offer'          => '初回注文で最大40％オフ',
+                        'shop-now'       => '今すぐ購入',
                     ],
                 ],
             ],
@@ -376,57 +413,49 @@ return [
 
         'datagrid' => [
             'toolbar' => [
-                'mass-actions' => [
-                    'select-action' => 'アクションを選択',
-                    'select-option' => 'オプションを選択',
-                    'submit'        => '送信',
-                ],
+                'length-of' => ':length の',
+                'results'   => ':total 件の結果',
+                'selected'  => ':total 件選択済み',
 
-                'filter' => [
-                    'title' => 'フィルタ',
+                'mass-actions' => [
+                    'must-select-a-mass-action'        => 'マスアクションを選択する必要があります。',
+                    'must-select-a-mass-action-option' => 'マスアクションのオプションを選択する必要があります。',
+                    'no-records-selected'              => 'レコードが選択されていません。',
+                    'select-action'                    => 'アクションを選択',
                 ],
 
                 'search' => [
                     'title' => '検索',
                 ],
-            ],
 
-            'filters' => [
-                'title' => 'フィルタを適用',
+                'filter' => [
+                    'apply-filter' => 'フィルタを適用',
+                    'title'        => 'フィルタ',
 
-                'dropdown' => [
-                    'searchable' => [
-                        'atleast-two-chars' => '少なくとも2文字入力してください...',
-                        'no-results'        => '結果が見つかりません...',
+                    'dropdown' => [
+                        'select' => '選択',
+
+                        'searchable' => [
+                            'at-least-two-chars' => '少なくとも2文字入力してください...',
+                            'no-results'         => '結果が見つかりません...',
+                        ],
                     ],
-                ],
 
-                'custom-filters' => [
-                    'clear-all' => 'すべてクリア',
-                    'title'     => 'カスタムフィルタ',
-                ],
-
-                'date-options' => [
-                    'last-month'        => '前月',
-                    'last-six-months'   => '過去6ヶ月',
-                    'last-three-months' => '過去3ヶ月',
-                    'this-month'        => '今月',
-                    'this-week'         => '今週',
-                    'this-year'         => '今年',
-                    'today'             => '今日',
-                    'yesterday'         => '昨日',
+                    'custom-filters' => [
+                        'clear-all' => 'すべてクリア',
+                    ],
                 ],
             ],
 
             'table' => [
                 'actions'              => 'アクション',
                 'next-page'            => '次のページ',
-                'no-records-available' => '利用可能なレコードはありません。',
-                'of'                   => 'の合計 :total エントリ',
+                'no-records-available' => '利用可能なレコードがありません。',
+                'of'                   => '全 :total エントリー中',
                 'page-navigation'      => 'ページナビゲーション',
                 'page-number'          => 'ページ番号',
                 'previous-page'        => '前のページ',
-                'showing'              => ':firstItem を表示',
+                'showing'              => ':firstItem 件を表示中',
                 'to'                   => ':lastItem まで',
             ],
         ],
@@ -445,14 +474,14 @@ return [
 
         'products' => [
             'card' => [
-                'add-to-cart'                 => 'カートに追加',
-                'add-to-compare'              => '比較リストに追加',
-                'add-to-compare-success'      => 'アイテムが比較リストに追加されました。',
-                'add-to-wishlist'             => 'ウィッシュリストに追加',
-                'already-in-compare'          => 'アイテムはすでに比較リストに追加されています。',
-                'new'                         => '新着',
-                'review-description'          => 'この製品の最初のレビュアになる',
-                'sale'                        => 'セール',
+                'add-to-cart'            => 'カートに追加',
+                'add-to-compare'         => '比較リストに追加',
+                'add-to-compare-success' => 'アイテムが比較リストに追加されました。',
+                'add-to-wishlist'        => 'ウィッシュリストに追加',
+                'already-in-compare'     => 'アイテムはすでに比較リストに追加されています。',
+                'new'                    => '新着',
+                'review-description'     => 'この製品の最初のレビュアになる',
+                'sale'                   => 'セール',
             ],
 
             'carousel' => [
@@ -492,7 +521,7 @@ return [
         ],
 
         'sort-by' => [
-            'title'   => '並び替え',
+            'title' => '並び替え',
         ],
 
         'view' => [
@@ -503,7 +532,8 @@ return [
                 ],
 
                 'bundle' => [
-                    'none' => 'なし',
+                    'none'         => 'なし',
+                    'total-amount' => '合計金額',
                 ],
 
                 'downloadable' => [
@@ -594,7 +624,7 @@ return [
             ],
 
             'results' => [
-                'analysed-keywords' => '分析されたキーワード:',
+                'analyzed-keywords' => '分析されたキーワード:',
             ],
         ],
     ],
@@ -685,6 +715,16 @@ return [
                 'proceed-to-checkout' => 'チェックアウトに進む',
                 'sub-total'           => '小計',
                 'tax'                 => '税金',
+
+                'estimate-shipping' => [
+                    'country'        => '国',
+                    'info'           => '配送先を入力して、配送料と税金の見積もりを取得してください。',
+                    'postcode'       => '郵便番号',
+                    'select-country' => '国を選択',
+                    'select-state'   => '都道府県を選択',
+                    'state'          => '都道府県',
+                    'title'          => '配送料と税金の見積もり',
+                ],
             ],
         ],
 
@@ -765,11 +805,25 @@ return [
     ],
 
     'home' => [
+        'contact' => [
+            'about'         => '私たちについて',
+            'desc'          => '何をお考えですか？',
+            'describe-here' => 'ここに説明してください',
+            'email'         => 'メール',
+            'message'       => 'メッセージ',
+            'name'          => '名前',
+            'phone-number'  => '電話番号',
+            'submit'        => '送信',
+            'title'         => 'お問い合わせ',
+        ],
+
         'index' => [
             'offer'               => '初めての注文で最大40%OFF 今すぐショッピング',
             'resend-verify-email' => '確認メールを再送信',
             'verify-email'        => 'メールアカウントを確認',
         ],
+
+        'thanks-for-contact' => 'ご意見やご質問をお寄せいただきありがとうございます。返信いたしますので、しばらくお待ちください。',
     ],
 
     'partials' => [
@@ -779,7 +833,7 @@ return [
     ],
 
     'errors' => [
-        'go-to-home'   => 'ホームに戻る',
+        'go-to-home' => 'ホームに戻る',
 
         '404' => [
             'description' => 'おっと！お探しのページは休暇中のようです。お探しのものが見つかりませんでした。',
@@ -869,6 +923,14 @@ return [
                 'subject'     => 'ニュースレターに登録しました',
                 'unsubscribe' => '登録解除',
             ],
+        ],
+
+        'contact-us' => [
+            'contact-from'    => 'ウェブサイトのお問い合わせフォーム経由で',
+            'reply-to-mail'   => 'このメールに返信してください。',
+            'reach-via-phone' => 'または、電話でお問い合わせいただけます。',
+            'inquiry-from'    => 'お問い合わせ元',
+            'to'              => 'お問い合わせ先',
         ],
 
         'orders' => [

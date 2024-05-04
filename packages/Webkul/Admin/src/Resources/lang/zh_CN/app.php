@@ -11,7 +11,7 @@ return [
         ],
 
         'forget-password' => [
-            'create'    => [
+            'create' => [
                 'email'           => '注册电子邮件',
                 'email-not-exist' => '电子邮件不存在',
                 'page-title'      => '忘记密码',
@@ -36,6 +36,8 @@ return [
         'description-text' => '列出所有通知',
         'marked-success'   => '通知标记成功',
         'no-record'        => '未找到记录',
+        'of'               => '的',
+        'per-page'         => '每页',
         'read-all'         => '标记为已读',
         'title'            => '通知',
         'view-all'         => '查看全部',
@@ -47,15 +49,6 @@ return [
             'pending'         => '订单待处理',
             'pending-payment' => '待付款订单',
             'processing'      => '订单处理中',
-        ],
-
-        'status' => [
-            'all'        => '全部',
-            'canceled'   => '已取消',
-            'closed'     => '已关闭',
-            'completed'  => '已完成',
-            'pending'    => '待处理',
-            'processing' => '处理中',
         ],
     ],
 
@@ -146,28 +139,28 @@ return [
                 ],
 
                 'datagrid' => [
-                    'canceled'         => '已取消',
-                    'channel-name'     => '渠道',
-                    'closed'           => '已关闭',
-                    'completed'        => '已完成',
-                    'customer'         => '客户',
-                    'date'             => '日期',
-                    'email'            => '电子邮件',
-                    'fraud'            => '欺诈',
-                    'grand-total'      => '总计',
-                    'id'               => '订单号：#:id',
-                    'images'           => '图片',
-                    'location'         => '地点',
-                    'order-id'         => '订单编号',
-                    'pay-by'           => '支付方式 - :method',
-                    'pay-via'          => '支付方式',
-                    'pending-payment'  => '待付款',
-                    'pending'          => '待处理',
-                    'processing'       => '处理中',
-                    'product-count'    => ':count + 更多产品',
-                    'status'           => '状态',
-                    'success'          => '成功',
-                    'view'             => '查看',
+                    'canceled'        => '已取消',
+                    'channel-name'    => '渠道',
+                    'closed'          => '已关闭',
+                    'completed'       => '已完成',
+                    'customer'        => '客户',
+                    'date'            => '日期',
+                    'email'           => '电子邮件',
+                    'fraud'           => '欺诈',
+                    'grand-total'     => '总计',
+                    'id'              => '订单号：#:id',
+                    'images'          => '图片',
+                    'location'        => '地点',
+                    'order-id'        => '订单编号',
+                    'pay-by'          => '支付方式 - :method',
+                    'pay-via'         => '支付方式',
+                    'pending-payment' => '待付款',
+                    'pending'         => '待处理',
+                    'processing'      => '处理中',
+                    'product-count'   => ':count + 更多产品',
+                    'status'          => '状态',
+                    'success'         => '成功',
+                    'view'            => '查看',
                 ],
             ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => '添加地址',
-                        'add-new-address'  => '添加新地址',
                         'add-new'          => '添加新地址',
+                        'add-new-address'  => '添加新地址',
                         'addresses'        => '地址',
                         'back'             => '返回',
                         'billing-address'  => '账单地址',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => '邮政编码',
                         'proceed'          => '继续',
                         'same-as-billing'  => '使用相同地址作为送货地址？',
-                        'save-address'     => '保存到地址簿',
                         'save'             => '保存',
+                        'save-address'     => '保存到地址簿',
                         'select-country'   => '选择国家',
                         'select-state'     => '选择省/州',
                         'shipping-address' => '送货地址',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => '街道地址',
                         'telephone'        => '电话',
                         'title'            => '地址',
+                        'vat-id'           => '增值税号码',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => '发票 #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount 每单位 x :qty 数量',
                 'create-invoice'     => '创建发票',
                 'create-success'     => '发票创建成功',
@@ -698,7 +692,7 @@ return [
                 'create-btn'    => '创建产品',
                 'title'         => '产品',
 
-                'create'     => [
+                'create' => [
                     'back-btn'                => '返回',
                     'configurable-attributes' => '可配置属性',
                     'create-btn'              => '创建产品',
@@ -709,31 +703,31 @@ return [
                     'type'                    => '类型',
                 ],
 
-                'datagrid'   => [
-                    'active'                        => '激活',
-                    'attribute-family'              => '属性家族',
-                    'attribute-family-value'        => '属性家族 - :attribute_family',
-                    'category'                      => '类别',
-                    'copy-of'                       => '复制 :value',
-                    'copy-of-slug'                  => '复制-:value',
-                    'delete'                        => '删除',
-                    'disable'                       => '禁用',
-                    'id'                            => 'ID',
-                    'id-value'                      => 'ID - :id',
-                    'image'                         => '图像',
-                    'mass-delete-success'           => '已成功删除所选产品',
-                    'mass-update-success'           => '已成功更新所选产品',
-                    'name'                          => '名称',
-                    'out-of-stock'                  => '缺货',
-                    'price'                         => '价格',
-                    'product-image'                 => '产品图像',
-                    'qty'                           => '数量',
-                    'qty-value'                     => ':qty 可用',
-                    'sku'                           => 'SKU',
-                    'sku-value'                     => 'SKU - :sku',
-                    'status'                        => '状态',
-                    'type'                          => '类型',
-                    'update-status'                 => '更新状态',
+                'datagrid' => [
+                    'active'                 => '激活',
+                    'attribute-family'       => '属性家族',
+                    'attribute-family-value' => '属性家族 - :attribute_family',
+                    'category'               => '类别',
+                    'copy-of'                => '复制 :value',
+                    'copy-of-slug'           => '复制-:value',
+                    'delete'                 => '删除',
+                    'disable'                => '禁用',
+                    'id'                     => 'ID',
+                    'id-value'               => 'ID - :id',
+                    'image'                  => '图像',
+                    'mass-delete-success'    => '已成功删除所选产品',
+                    'mass-update-success'    => '已成功更新所选产品',
+                    'name'                   => '名称',
+                    'out-of-stock'           => '缺货',
+                    'price'                  => '价格',
+                    'product-image'          => '产品图像',
+                    'qty'                    => '数量',
+                    'qty-value'              => ':qty 可用',
+                    'sku'                    => 'SKU',
+                    'sku-value'              => 'SKU - :sku',
+                    'status'                 => '状态',
+                    'type'                   => '类型',
+                    'update-status'          => '更新状态',
                 ],
             ],
 
@@ -1069,6 +1063,7 @@ return [
                 'position'              => '位置',
                 'price'                 => '价格',
                 'regex'                 => '正则表达式',
+                'regex-info'            => '表达式应该用双引号括起来。',
                 'save-btn'              => '保存属性',
                 'select'                => '选择',
                 'select-type'           => '选择属性类型',
@@ -1132,6 +1127,7 @@ return [
                 'position'              => '位置',
                 'price'                 => '价格',
                 'regex'                 => '正则表达式',
+                'regex-info'            => '表达式应该用双引号括起来。',
                 'save-btn'              => '保存属性',
                 'select'                => '选择',
                 'select-type'           => '选择属性类型',
@@ -1417,7 +1413,7 @@ return [
                 'title'                       => '客户视图',
 
                 'address' => [
-                    'count'  => '地址 (:count)',
+                    'count' => '地址 (:count)',
 
                     'create' => [
                         'city'               => '城市',
@@ -1796,7 +1792,7 @@ return [
 
                     ],
 
-                    'create'   => [
+                    'create' => [
                         'date'           => '日期',
                         'delete-warning' => '您确定要执行此操作吗？',
                         'description'    => '描述',
@@ -2341,9 +2337,11 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken'     => ':name 已被使用。',
-            'create-btn'        => '创建页面',
-            'title'             => '页面',
+            'already-taken' => '该 :name 已被使用。',
+            'channel'       => '渠道',
+            'create-btn'    => '创建页面',
+            'language'      => '语言',
+            'title'         => '页面',
 
             'datagrid' => [
                 'delete'              => '删除',
@@ -2395,7 +2393,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn' => '创建区域',
                 'locale'     => '区域',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => '创建货币',
                 'currency'   => '货币',
@@ -2483,9 +2481,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => '動作',
                     'allowed-errors'      => '允許的錯誤',
                     'back-btn'            => '返回',
@@ -2493,9 +2491,9 @@ return [
                     'delete'              => '刪除',
                     'download-sample'     => '下載範例',
                     'field-separator'     => '欄位分隔符',
-                    'file-info-example'   => '例如，在 product-images 的情況下，檔案應放置在 /project-root/storage/app/import/product-images 資料夾中。',
-                    'file-info'           => '使用相對於 /project-root/storage/app/import 的路徑，例如 product-images, import-images。',
                     'file'                => '檔案',
+                    'file-info'           => '使用相對於 /project-root/storage/app/import 的路徑，例如 product-images, import-images。',
+                    'file-info-example'   => '例如，在 product-images 的情況下，檔案應放置在 /project-root/storage/app/import/product-images 資料夾中。',
                     'general'             => '一般',
                     'images-directory'    => '圖片目錄路徑',
                     'process-in-queue'    => '佇列中處理',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => '驗證策略',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => '動作',
                     'allowed-errors'      => '允許的錯誤',
                     'back-btn'            => '返回',
@@ -2517,9 +2515,9 @@ return [
                     'delete'              => '刪除',
                     'download-sample'     => '下載範例',
                     'field-separator'     => '欄位分隔符',
-                    'file-info-example'   => '例如，在 product-images 的情況下，檔案應放置在 /project-root/storage/app/import/product-images 資料夾中。',
-                    'file-info'           => '使用相對於 /project-root/storage/app/import 的路徑，例如 product-images, import-images。',
                     'file'                => '檔案',
+                    'file-info'           => '使用相對於 /project-root/storage/app/import 的路徑，例如 product-images, import-images。',
+                    'file-info-example'   => '例如，在 product-images 的情況下，檔案應放置在 /project-root/storage/app/import/product-images 資料夾中。',
                     'general'             => '一般',
                     'images-directory'    => '圖片目錄路徑',
                     'process-in-queue'    => '佇列中處理',
@@ -2533,11 +2531,11 @@ return [
                     'validation-strategy' => '驗證策略',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => '建立匯入',
                     'title'        => '匯入',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => '動作',
                         'completed-at'  => '已完成於',
                         'created'       => '已建立',
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => '返回',
                     'completed-batches'       => '已完成的批次：',
                     'download-error-report'   => '下載完整報告',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => '创建汇率',
                 'exchange-rate' => '汇率',
@@ -2607,7 +2605,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'   => '编辑汇率',
+                    'title' => '编辑汇率',
                 ],
 
                 'datagrid' => [
@@ -2708,7 +2706,7 @@ return [
             'update-success'    => '库存来源更新成功',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => '您确定要删除吗？',
@@ -2748,7 +2746,7 @@ return [
                 ],
             ],
 
-            'rates'   => [
+            'rates' => [
                 'index' => [
                     'button-title' => '创建税率',
                     'tax-rate'     => '税率',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => '返回',
-                    'basic-settings' => '基本设置',
                     'country'        => '国家',
                     'identifier'     => '标识符',
                     'save-btn'       => '保存税率',
                     'select-country' => '选择国家',
                     'select-state'   => '选择州',
+                    'settings'       => '设置',
                     'state'          => '州',
                     'tax-rate'       => '税率',
                     'title'          => '编辑税率',
@@ -2934,7 +2932,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'    => '编辑用户',
+                    'title' => '编辑用户',
                 ],
             ],
 
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => '值：:value',
                 'value-input'                   => '值',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => '添加服务',
                     'channels'           => '渠道',
                     'delete'             => '删除',
@@ -3592,17 +3590,21 @@ return [
                 'title' => '电子邮件',
 
                 'email-settings' => [
-                    'admin-email'            => '管理员电子邮件',
-                    'admin-email-tip'        => '该频道的管理员电子邮件地址，用于接收电子邮件',
-                    'admin-name'             => '管理员名称',
-                    'admin-name-tip'         => '此名称将显示在所有管理员电子邮件中',
-                    'admin-page-limit'       => '默认每页显示项目数（管理员）',
-                    'email-sender-name'      => '电子邮件发送者名称',
-                    'email-sender-name-tip'  => '此名称将显示在客户收件箱中',
-                    'info'                   => '设置电子邮件发送者名称、商店电子邮件地址、管理员名称和管理员电子邮件地址。',
-                    'shop-email-from'        => '商店电子邮件地址',
-                    'shop-email-from-tip'    => '用于向客户发送电子邮件的该频道的电子邮件地址',
-                    'title'                  => '电子邮件设置',
+                    'admin-email'           => '管理员电子邮件',
+                    'admin-email-tip'       => '该频道的管理员电子邮件地址，用于接收电子邮件',
+                    'admin-name'            => '管理员名称',
+                    'admin-name-tip'        => '此名称将显示在所有管理员电子邮件中',
+                    'admin-page-limit'      => '默认每页显示项目数（管理员）',
+                    'contact-email'         => '联系邮箱',
+                    'contact-email-tip'     => '该邮箱地址将显示在您邮件的底部',
+                    'contact-name'          => '联系人姓名',
+                    'contact-name-tip'      => '该姓名将显示在您邮件的底部',
+                    'email-sender-name'     => '电子邮件发送者名称',
+                    'email-sender-name-tip' => '此名称将显示在客户收件箱中',
+                    'info'                  => '设置电子邮件发送者名称、商店电子邮件地址、管理员名称和管理员电子邮件地址。',
+                    'shop-email-from'       => '商店电子邮件地址',
+                    'shop-email-from-tip'   => '用于向客户发送电子邮件的该频道的电子邮件地址',
+                    'title'                 => '电子邮件设置',
                 ],
 
                 'notifications' => [
@@ -3669,40 +3671,40 @@ return [
                 ],
 
                 'payment-methods' => [
-                    'accepted-currencies'            => '接受的货币',
-                    'accepted-currencies-info'       => '以逗号分隔的货币代码，例如 USD，INR，...',
-                    'business-account'               => '商业账户',
-                    'cash-on-delivery'               => '货到付款',
-                    'cash-on-delivery-info'          => '客户在收到货物或服务时现金支付的付款方式。',
-                    'client-id'                      => '客户端 ID',
-                    'client-id-info'                 => '用于测试的 "sb"。',
-                    'client-secret'                  => '客户端密钥',
-                    'client-secret-info'             => '在这里添加您的秘密密钥',
-                    'description'                    => '描述',
-                    'generate-invoice'               => '下单后自动生成发票',
-                    'generate-invoice-applicable'    => '如果启用自动生成发票，则适用',
-                    'info'                           => '设置支付方法信息',
-                    'instructions'                   => '说明',
-                    'logo'                           => '标志',
-                    'logo-information'               => '图像分辨率应为约 55px x 45px',
-                    'mailing-address'                => '寄送支票至',
-                    'money-transfer'                 => '汇款',
-                    'money-transfer-info'            => '从一个人或帐户向另一个人或帐户转移资金，通常以电子方式进行，用于各种目的，如交易或汇款。',
-                    'page-title'                     => '支付方法',
-                    'paid'                           => '已支付',
-                    'paypal-smart-button'            => 'PayPal',
-                    'paypal-smart-button-info'       => 'PayPal 智能按钮：通过网站和应用程序上的可自定义按钮简化安全的多方法交易的在线支付。',
-                    'paypal-standard'                => 'PayPal 标准',
-                    'paypal-standard-info'           => 'PayPal 标准是在线业务的基本 PayPal 付款选项，使客户能够使用其 PayPal 帐户或信用/借记卡支付。',
-                    'pending'                        => '待处理',
-                    'pending-payment'                => '待付款',
-                    'processing'                     => '处理中',
-                    'sandbox'                        => '沙盒',
-                    'set-invoice-status'             => '在创建发票后将发票状态设置为',
-                    'set-order-status'               => '在创建发票后将订单状态设置为',
-                    'sort-order'                     => '排序顺序',
-                    'status'                         => '状态',
-                    'title'                          => '标题',
+                    'accepted-currencies'         => '接受的货币',
+                    'accepted-currencies-info'    => '以逗号分隔的货币代码，例如 USD，INR，...',
+                    'business-account'            => '商业账户',
+                    'cash-on-delivery'            => '货到付款',
+                    'cash-on-delivery-info'       => '客户在收到货物或服务时现金支付的付款方式。',
+                    'client-id'                   => '客户端 ID',
+                    'client-id-info'              => '用于测试的 "sb"。',
+                    'client-secret'               => '客户端密钥',
+                    'client-secret-info'          => '在这里添加您的秘密密钥',
+                    'description'                 => '描述',
+                    'generate-invoice'            => '下单后自动生成发票',
+                    'generate-invoice-applicable' => '如果启用自动生成发票，则适用',
+                    'info'                        => '设置支付方法信息',
+                    'instructions'                => '说明',
+                    'logo'                        => '标志',
+                    'logo-information'            => '图像分辨率应为约 55px x 45px',
+                    'mailing-address'             => '寄送支票至',
+                    'money-transfer'              => '汇款',
+                    'money-transfer-info'         => '从一个人或帐户向另一个人或帐户转移资金，通常以电子方式进行，用于各种目的，如交易或汇款。',
+                    'page-title'                  => '支付方法',
+                    'paid'                        => '已支付',
+                    'paypal-smart-button'         => 'PayPal',
+                    'paypal-smart-button-info'    => 'PayPal 智能按钮：通过网站和应用程序上的可自定义按钮简化安全的多方法交易的在线支付。',
+                    'paypal-standard'             => 'PayPal 标准',
+                    'paypal-standard-info'        => 'PayPal 标准是在线业务的基本 PayPal 付款选项，使客户能够使用其 PayPal 帐户或信用/借记卡支付。',
+                    'pending'                     => '待处理',
+                    'pending-payment'             => '待付款',
+                    'processing'                  => '处理中',
+                    'sandbox'                     => '沙盒',
+                    'set-invoice-status'          => '在创建发票后将发票状态设置为',
+                    'set-order-status'            => '在创建发票后将订单状态设置为',
+                    'sort-order'                  => '排序顺序',
+                    'status'                      => '状态',
+                    'title'                       => '标题',
                 ],
 
                 'order-settings' => [
@@ -3710,12 +3712,12 @@ return [
                     'title' => '订单设置',
 
                     'order-number' => [
-                        'generator'   => '订单号生成器',
-                        'length'      => '订单号长度',
-                        'prefix'      => '订单号前缀',
-                        'suffix'      => '订单号后缀',
-                        'title'       => '订单号设置',
-                        'title-info'  => '分配给特定顾客订单的唯一标识符，有助于跟踪、沟通和参考整个购买过程。',
+                        'generator'  => '订单号生成器',
+                        'length'     => '订单号长度',
+                        'prefix'     => '订单号前缀',
+                        'suffix'     => '订单号后缀',
+                        'title'      => '订单号设置',
+                        'title-info' => '分配给特定顾客订单的唯一标识符，有助于跟踪、沟通和参考整个购买过程。',
                     ],
 
                     'minimum-order' => [
@@ -4088,7 +4090,7 @@ return [
 
     'errors' => [
         'dashboard' => '仪表盘',
-        'go-back'   => '返回', // Translated "Go Back" to "返回"
+        'go-back'   => '返回',
         'support'   => '如果问题持续存在，请通过<a href=":link" class=":class">:email</a>联系我们以寻求帮助。',
 
         '404' => [

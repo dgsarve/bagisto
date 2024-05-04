@@ -70,67 +70,101 @@ return [
         ],
 
         'account' => [
-            'home'      => 'الصفحة الرئيسية',
+            'home' => 'الصفحة الرئيسية',
 
-            'profile'   => [
-                'confirm-password'        => 'تأكيد كلمة المرور',
-                'current-password'        => 'كلمة المرور الحالية',
-                'delete'                  => 'حذف',
-                'delete-failed'           => 'حدثت مشكلة أثناء حذف العميل.',
-                'delete-profile'          => 'حذف الحساب',
-                'delete-success'          => 'تم حذف العميل بنجاح',
-                'dob'                     => 'تاريخ الميلاد',
-                'edit'                    => 'تعديل',
-                'edit-profile'            => 'تعديل الحساب',
-                'edit-success'            => 'تم تحديث الملف الشخصي بنجاح',
-                'email'                   => 'البريد الإلكتروني',
-                'enter-password'          => 'أدخل كلمة مرورك',
-                'female'                  => 'أنثى',
-                'first-name'              => 'الاسم الأول',
-                'gender'                  => 'الجنس',
-                'last-name'               => 'اسم العائلة',
-                'male'                    => 'ذكر',
-                'new-password'            => 'كلمة المرور الجديدة',
-                'order-pending'           => 'لا يمكن حذف حساب العميل لأن بعض الطلبات في حالة معلقة أو تجري المعالجة.',
-                'other'                   => 'آخر',
-                'phone'                   => 'الهاتف',
-                'save'                    => 'حفظ',
-                'select-gender'           => 'اختر الجنس',
-                'subscribe-to-newsletter' => 'الاشتراك في النشرة الإخبارية',
-                'title'                   => 'الملف الشخصي',
-                'unmatch'                 => 'كلمة المرور القديمة لا تتطابق.',
-                'wrong-password'          => '!كلمة المرور خاطئة',
+            'profile' => [
+                'index' => [
+                    'delete'         => 'حذف',
+                    'delete-failed'  => 'حدث خطأ أثناء حذف العميل.',
+                    'delete-profile' => 'حذف الملف الشخصي',
+                    'delete-success' => 'تم حذف العميل بنجاح',
+                    'dob'            => 'تاريخ الميلاد',
+                    'edit'           => 'تعديل',
+                    'edit-success'   => 'تم تحديث الملف الشخصي بنجاح',
+                    'email'          => 'البريد الإلكتروني',
+                    'enter-password' => 'أدخل كلمة المرور الخاصة بك',
+                    'first-name'     => 'الاسم الأول',
+                    'gender'         => 'الجنس',
+                    'last-name'      => 'اسم العائلة',
+                    'order-pending'  => 'لا يمكن حذف حساب العميل لأن بعض الطلبات قيد الانتظار أو في حالة المعالجة.',
+                    'title'          => 'الملف الشخصي',
+                    'unmatched'      => 'كلمة المرور القديمة غير متطابقة.',
+                    'wrong-password' => 'كلمة المرور خاطئة!',
+                ],
+
+                'edit' => [
+                    'confirm-password'        => 'تأكيد كلمة المرور',
+                    'current-password'        => 'كلمة المرور الحالية',
+                    'dob'                     => 'تاريخ الميلاد',
+                    'edit'                    => 'تعديل',
+                    'edit-profile'            => 'تعديل الملف الشخصي',
+                    'email'                   => 'البريد الإلكتروني',
+                    'female'                  => 'أنثى',
+                    'first-name'              => 'الاسم الأول',
+                    'gender'                  => 'الجنس',
+                    'last-name'               => 'اسم العائلة',
+                    'male'                    => 'ذكر',
+                    'new-password'            => 'كلمة المرور الجديدة',
+                    'other'                   => 'آخر',
+                    'phone'                   => 'الهاتف',
+                    'save'                    => 'حفظ',
+                    'subscribe-to-newsletter' => 'الاشتراك في النشرة الإخبارية',
+                ],
             ],
 
             'addresses' => [
-                'add-address'      => 'إضافة عنوان',
-                'address-1'        => 'العنوان 1',
-                'address-2'        => 'العنوان 2',
-                'city'             => 'المدينة',
-                'company-name'     => 'اسم الشركة',
-                'country'          => 'البلد',
-                'create-success'   => 'تمت إضافة العنوان بنجاح.',
-                'default-address'  => 'العنوان الافتراضي',
-                'default-delete'   => 'لا يمكن تغيير العنوان الافتراضي.',
-                'delete'           => 'حذف',
-                'delete-success'   => 'تم حذف العنوان بنجاح',
-                'edit'             => 'تعديل',
-                'edit-address'     => 'تعديل العنوان',
-                'edit-success'     => 'تم تحديث العنوان بنجاح.',
-                'email'            => 'البريد الإلكتروني',
-                'empty-address'    => 'لم تقم بإضافة عنوان إلى حسابك بعد.',
-                'first-name'       => 'الاسم الأول',
-                'last-name'        => 'اسم العائلة',
-                'phone'            => 'الهاتف',
-                'post-code'        => 'الرمز البريدي',
-                'save'             => 'حفظ',
-                'security-warning' => 'تم العثور على نشاط مشبوه!!!',
-                'select-country'   => 'حدد البلد',
-                'set-as-default'   => 'تعيين كافتراضي',
-                'state'            => 'الولاية',
-                'street-address'   => 'عنوان الشارع',
-                'title'            => 'العنوان',
-                'vat-id'           => 'معرف VAT',
+                'index' => [
+                    'add-address'      => 'إضافة عنوان',
+                    'create-success'   => 'تمت إضافة العنوان بنجاح.',
+                    'default-address'  => 'العنوان الافتراضي',
+                    'default-delete'   => 'لا يمكن تغيير العنوان الافتراضي.',
+                    'delete'           => 'حذف',
+                    'delete-success'   => 'تم حذف العنوان بنجاح',
+                    'edit'             => 'تعديل',
+                    'edit-success'     => 'تم تحديث العنوان بنجاح.',
+                    'empty-address'    => 'لم تقم بإضافة عنوان إلى حسابك بعد.',
+                    'security-warning' => 'تم اكتشاف نشاط مشبوه !!!',
+                    'set-as-default'   => 'تعيين كافتراضي',
+                    'title'            => 'العنوان',
+                    'update-success'   => 'تم تحديث العنوان بنجاح.',
+                ],
+
+                'create' => [
+                    'add-address'    => 'إضافة عنوان',
+                    'city'           => 'المدينة',
+                    'company-name'   => 'اسم الشركة',
+                    'country'        => 'البلد',
+                    'email'          => 'البريد الإلكتروني',
+                    'first-name'     => 'الاسم الأول',
+                    'last-name'      => 'اسم العائلة',
+                    'phone'          => 'الهاتف',
+                    'post-code'      => 'الرمز البريدي',
+                    'save'           => 'حفظ',
+                    'select-country' => 'اختر البلد',
+                    'set-as-default' => 'تعيين كافتراضي',
+                    'state'          => 'المنطقة',
+                    'street-address' => 'عنوان الشارع',
+                    'title'          => 'العنوان',
+                    'vat-id'         => 'رقم الضريبة',
+                ],
+
+                'edit' => [
+                    'city'           => 'المدينة',
+                    'company-name'   => 'اسم الشركة',
+                    'country'        => 'البلد',
+                    'edit'           => 'تعديل',
+                    'email'          => 'البريد الإلكتروني',
+                    'first-name'     => 'الاسم الأول',
+                    'last-name'      => 'اسم العائلة',
+                    'phone'          => 'الهاتف',
+                    'post-code'      => 'الرمز البريدي',
+                    'save'           => 'حفظ',
+                    'select-country' => 'اختر البلد',
+                    'state'          => 'المنطقة',
+                    'street-address' => 'عنوان الشارع',
+                    'title'          => 'العنوان',
+                    'vat-id'         => 'رقم الضريبة',
+                ],
             ],
 
             'orders' => [
@@ -163,6 +197,7 @@ return [
                     'cancel-confirm-msg' => 'هل أنت متأكد أنك تريد إلغاء هذا الطلب؟',
                     'cancel-error'       => 'لا يمكن إلغاء طلبك.',
                     'cancel-success'     => 'تم إلغاء طلبك بنجاح',
+                    'contact'            => 'اتصل بنا',
                     'page-title'         => 'الطلب #:order_id',
                     'payment-method'     => 'طريقة الدفع',
                     'reorder-btn-title'  => 'إعادة ترتيب',
@@ -269,7 +304,7 @@ return [
                 ],
             ],
 
-            'reviews'    => [
+            'reviews' => [
                 'empty-review' => 'لم تقم بتقييم أي منتج حتى الآن',
                 'title'        => 'التقييمات',
             ],
@@ -347,9 +382,11 @@ return [
                 'welcome-guest'     => 'مرحبًا بكم زائرًا',
                 'wishlist'          => 'قائمة المفضلة',
 
-                'desktop'           => [
+                'desktop' => [
                     'top' => [
                         'default-locale' => 'اللغة الافتراضية',
+                        'offer'          => 'احصل على خصم يصل إلى 40٪ على طلبك الأول',
+                        'shop-now'       => 'تسوق الآن',
                     ],
                 ],
             ],
@@ -376,57 +413,49 @@ return [
 
         'datagrid' => [
             'toolbar' => [
-                'mass-actions' => [
-                    'select-action' => 'حدد الإجراء',
-                    'select-option' => 'اختر الخيار',
-                    'submit'        => 'إرسال',
-                ],
+                'length-of' => ':طول',
+                'results'   => ':إجمالي النتائج',
+                'selected'  => ':محددة النتائج',
 
-                'filter' => [
-                    'title' => 'تصفية',
+                'mass-actions' => [
+                    'must-select-a-mass-action'        => 'يجب عليك تحديد إجراء جماعي.',
+                    'must-select-a-mass-action-option' => 'يجب عليك تحديد خيار الإجراء الجماعي.',
+                    'no-records-selected'              => 'لم يتم تحديد أي سجلات.',
+                    'select-action'                    => 'اختر إجراء',
                 ],
 
                 'search' => [
-                    'title' => 'بحث',
+                    'title' => 'البحث',
                 ],
-            ],
 
-            'filters' => [
-                'title'          => 'تطبيق الفلاتر',
+                'filter' => [
+                    'apply-filter' => 'تطبيق الفلاتر',
+                    'title'        => 'الفلتر',
 
-                'dropdown' => [
-                    'searchable' => [
-                        'atleast-two-chars' => 'اكتب ما لا يقل عن حرفين...',
-                        'no-results'        => 'لم يتم العثور على نتائج...',
+                    'dropdown' => [
+                        'select' => 'اختر',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'اكتب ما لا يقل عن 2 حرفًا...',
+                            'no-results'         => 'لم يتم العثور على نتائج...',
+                        ],
                     ],
-                ],
 
-                'custom-filters' => [
-                    'clear-all' => 'امسح الكل',
-                    'title'     => 'تصفيات مخصصة',
-                ],
-
-                'date-options' => [
-                    'last-month'        => 'الشهر الماضي',
-                    'last-six-months'   => 'آخر 6 أشهر',
-                    'last-three-months' => 'آخر 3 أشهر',
-                    'this-month'        => 'هذا الشهر',
-                    'this-week'         => 'هذا الأسبوع',
-                    'this-year'         => 'هذا العام',
-                    'today'             => 'اليوم',
-                    'yesterday'         => 'أمس',
+                    'custom-filters' => [
+                        'clear-all' => 'مسح الكل',
+                    ],
                 ],
             ],
 
             'table' => [
-                'actions'              => 'إجراءات',
+                'actions'              => 'الإجراءات',
                 'next-page'            => 'الصفحة التالية',
-                'no-records-available' => 'لا تتوفر سجلات.',
-                'of'                   => 'من :total إدخالات',
+                'no-records-available' => 'لا توجد سجلات متاحة.',
+                'of'                   => 'من :إجمالي الإدخالات',
                 'page-navigation'      => 'تنقل الصفحة',
                 'page-number'          => 'رقم الصفحة',
                 'previous-page'        => 'الصفحة السابقة',
-                'showing'              => 'يتم عرض :firstItem',
+                'showing'              => 'عرض :firstItem',
                 'to'                   => 'إلى :lastItem',
             ],
         ],
@@ -435,7 +464,7 @@ return [
             'default-content' => 'المحتوى الافتراضي',
             'default-header'  => 'العنوان الافتراضي',
 
-            'confirm'         => [
+            'confirm' => [
                 'agree-btn'    => 'موافق',
                 'disagree-btn' => 'غير موافق',
                 'message'      => 'هل أنت متأكد أنك تريد القيام بهذا الإجراء؟',
@@ -492,7 +521,8 @@ return [
         ],
 
         'sort-by' => [
-            'title'   => 'ترتيب حسب',
+            'title'        => 'ترتيب حسب',
+            'total-amount' => 'إجمالي المبلغ',
         ],
 
         'view' => [
@@ -594,7 +624,7 @@ return [
             ],
 
             'results' => [
-                'analysed-keywords' => 'الكلمات المفحوصة:',
+                'analyzed-keywords' => 'الكلمات المفحوصة:',
             ],
         ],
     ],
@@ -685,6 +715,16 @@ return [
                 'proceed-to-checkout' => 'المتابعة للسداد',
                 'sub-total'           => 'المجموع الفرعي',
                 'tax'                 => 'الضريبة',
+
+                'estimate-shipping' => [
+                    'country'        => 'الدولة',
+                    'info'           => 'أدخل وجهتك للحصول على تقدير لتكلفة التوصيل والضرائب.',
+                    'postcode'       => 'الرمز البريدي',
+                    'select-country' => 'اختر الدولة',
+                    'select-state'   => 'اختر الولاية',
+                    'state'          => 'الولاية',
+                    'title'          => 'تقدير التوصيل والضرائب',
+                ],
             ],
         ],
 
@@ -765,11 +805,25 @@ return [
     ],
 
     'home' => [
+        'contact' => [
+            'about'         => 'أكتب لنا ملاحظة وسنعود إليك في أقرب وقت ممكن',
+            'desc'          => 'ما الذي يجول في ذهنك؟',
+            'describe-here' => 'صف هنا',
+            'email'         => 'البريد الإلكتروني',
+            'message'       => 'الرسالة',
+            'name'          => 'الاسم',
+            'phone-number'  => 'رقم الهاتف',
+            'submit'        => 'إرسال',
+            'title'         => 'اتصل بنا',
+        ],
+
         'index' => [
             'offer'               => 'احصل على خصم يصل إلى 40٪ على طلبك الأول اشتر الآن',
             'resend-verify-email' => 'إعادة إرسال رسالة التحقق من البريد الإلكتروني',
             'verify-email'        => 'تحقق من حساب بريدك الإلكتروني',
         ],
+
+        'thanks-for-contact' => 'شكرًا للتواصل معنا بتعليقاتك وأسئلتك. سنرد عليك قريبًا جدًا.',
     ],
 
     'partials' => [
@@ -779,7 +833,7 @@ return [
     ],
 
     'errors' => [
-        'go-to-home'   => 'العودة للصفحة الرئيسية',
+        'go-to-home' => 'العودة للصفحة الرئيسية',
 
         '404' => [
             'description' => 'عذرًا! الصفحة التي تبحث عنها في إجازة. يبدو أننا لم نتمكن من العثور على ما كنت تبحث عنه.',
@@ -869,6 +923,14 @@ return [
                 'subject'     => 'أنت مشترك في نشرتنا الإخبارية',
                 'unsubscribe' => 'إلغاء الاشتراك',
             ],
+        ],
+
+        'contact-us' => [
+            'contact-from'    => 'عبر نموذج الاتصال بالموقع',
+            'reply-to-mail'   => 'يرجى الرد على هذا البريد الإلكتروني.',
+            'reach-via-phone' => 'بالإضافة إلى ذلك، يمكنك الاتصال بنا عبر الهاتف على',
+            'inquiry-from'    => 'استفسار من',
+            'to'              => 'للتواصل مع',
         ],
 
         'orders' => [

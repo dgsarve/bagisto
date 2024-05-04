@@ -5,7 +5,7 @@
 <div {{ $attributes->merge(['class' => 'border-b border-[#E9E9E9]']) }}>
     <v-accordion
         is-active="{{ $isActive }}"
-        {{ $attributes }}
+        {{ $attributes->except('class') }}
     >
         @isset($header)
             <template v-slot:header="{ toggle, isOpen }">
@@ -41,7 +41,10 @@
 </div>
 
 @pushOnce('scripts')
-    <script type="text/x-template" id="v-accordion-template">
+    <script
+        type="text/x-template"
+        id="v-accordion-template"
+    >
         <div>
             <slot
                 name="header"

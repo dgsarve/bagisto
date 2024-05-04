@@ -73,64 +73,98 @@ return [
             'home' => 'Home',
 
             'profile' => [
-                'confirm-password'        => 'Bevestig Wachtwoord',
-                'current-password'        => 'Huidig Wachtwoord',
-                'delete'                  => 'Verwijderen',
-                'delete-failed'           => 'Fout opgetreden bij het verwijderen van de klant.',
-                'delete-profile'          => 'Profiel Verwijderen',
-                'delete-success'          => 'Klant succesvol verwijderd',
-                'dob'                     => 'Geboortedatum',
-                'edit'                    => 'Bewerken',
-                'edit-profile'            => 'Profiel Bewerken',
-                'edit-success'            => 'Profiel succesvol bijgewerkt',
-                'email'                   => 'E-mail',
-                'enter-password'          => 'Voer uw wachtwoord in',
-                'female'                  => 'Vrouw',
-                'first-name'              => 'Voornaam',
-                'gender'                  => 'Geslacht',
-                'last-name'               => 'Achternaam',
-                'male'                    => 'Man',
-                'new-password'            => 'Nieuw Wachtwoord',
-                'order-pending'           => 'Kan het klantaccount niet verwijderen omdat sommige bestelling(en) in behandeling zijn of in verwerking zijn.',
-                'other'                   => 'Anders',
-                'phone'                   => 'Telefoon',
-                'save'                    => 'Opslaan',
-                'select-gender'           => 'Geslacht selecteren',
-                'subscribe-to-newsletter' => 'Abonneer op nieuwsbrief',
-                'title'                   => 'Profiel',
-                'unmatch'                 => 'Het oude wachtwoord komt niet overeen.',
-                'wrong-password'          => 'Verkeerd Wachtwoord!',
+                'index' => [
+                    'delete'         => 'Verwijderen',
+                    'delete-failed'  => 'Fout opgetreden bij het verwijderen van de klant.',
+                    'delete-profile' => 'Profiel Verwijderen',
+                    'delete-success' => 'Klant succesvol verwijderd',
+                    'dob'            => 'Geboortedatum',
+                    'edit'           => 'Bewerken',
+                    'edit-success'   => 'Profiel succesvol bijgewerkt',
+                    'email'          => 'E-mail',
+                    'enter-password' => 'Voer uw wachtwoord in',
+                    'first-name'     => 'Voornaam',
+                    'gender'         => 'Geslacht',
+                    'last-name'      => 'Achternaam',
+                    'order-pending'  => 'Kan klantaccount niet verwijderen omdat er nog bestelling(en) in afwachting zijn of in verwerking zijn.',
+                    'title'          => 'Profiel',
+                    'unmatched'      => 'Het oude wachtwoord komt niet overeen.',
+                    'wrong-password' => 'Verkeerd wachtwoord!',
+                ],
+
+                'edit' => [
+                    'confirm-password'        => 'Bevestig Wachtwoord',
+                    'current-password'        => 'Huidig Wachtwoord',
+                    'dob'                     => 'Geboortedatum',
+                    'edit'                    => 'Bewerken',
+                    'edit-profile'            => 'Profiel Bewerken',
+                    'email'                   => 'E-mail',
+                    'female'                  => 'Vrouw',
+                    'first-name'              => 'Voornaam',
+                    'gender'                  => 'Geslacht',
+                    'last-name'               => 'Achternaam',
+                    'male'                    => 'Man',
+                    'new-password'            => 'Nieuw Wachtwoord',
+                    'other'                   => 'Anders',
+                    'phone'                   => 'Telefoon',
+                    'save'                    => 'Opslaan',
+                    'subscribe-to-newsletter' => 'Abonneren op nieuwsbrief',
+                ],
             ],
 
             'addresses' => [
-                'add-address'      => 'Adres Toevoegen',
-                'address-1'        => 'Adresregel 1',
-                'address-2'        => 'Adresregel 2',
-                'city'             => 'Plaats',
-                'company-name'     => 'Bedrijfsnaam',
-                'country'          => 'Land',
-                'create-success'   => 'Adres is succesvol toegevoegd.',
-                'default-address'  => 'Standaard Adres',
-                'default-delete'   => 'Het standaardadres kan niet worden gewijzigd.',
-                'delete'           => 'Verwijderen',
-                'delete-success'   => 'Adres succesvol verwijderd',
-                'edit'             => 'Bewerken',
-                'edit-address'     => 'Adres Bewerken',
-                'edit-success'     => 'Adres succesvol bijgewerkt.',
-                'email'            => 'E-mail',
-                'empty-address'    => 'U heeft nog geen adres aan uw account toegevoegd.',
-                'first-name'       => 'Voornaam',
-                'last-name'        => 'Achternaam',
-                'phone'            => 'Telefoon',
-                'post-code'        => 'Postcode',
-                'save'             => 'Opslaan',
-                'security-warning' => 'Verdachte activiteit gevonden!!!',
-                'select-country'   => 'Selecteer Land',
-                'set-as-default'   => 'Instellen als Standaard',
-                'state'            => 'Provincie',
-                'street-address'   => 'Straatnaam en Huisnummer',
-                'title'            => 'Adres',
-                'vat-id'           => 'BTW-nummer',
+                'index' => [
+                    'add-address'      => 'Adres Toevoegen',
+                    'create-success'   => 'Adres succesvol toegevoegd.',
+                    'default-address'  => 'Standaard Adres',
+                    'default-delete'   => 'Standaard adres kan niet worden gewijzigd.',
+                    'delete'           => 'Verwijderen',
+                    'delete-success'   => 'Adres succesvol verwijderd',
+                    'edit'             => 'Bewerken',
+                    'edit-success'     => 'Adres succesvol bijgewerkt.',
+                    'empty-address'    => 'U heeft nog geen adres aan uw account toegevoegd.',
+                    'security-warning' => 'Verdachte activiteit gevonden!!!',
+                    'set-as-default'   => 'Instellen als Standaard',
+                    'title'            => 'Adres',
+                    'update-success'   => 'Adres succesvol bijgewerkt.',
+                ],
+
+                'create' => [
+                    'add-address'    => 'Adres Toevoegen',
+                    'city'           => 'Stad',
+                    'company-name'   => 'Bedrijfsnaam',
+                    'country'        => 'Land',
+                    'email'          => 'E-mail',
+                    'first-name'     => 'Voornaam',
+                    'last-name'      => 'Achternaam',
+                    'phone'          => 'Telefoon',
+                    'post-code'      => 'Postcode',
+                    'save'           => 'Opslaan',
+                    'select-country' => 'Selecteer Land',
+                    'set-as-default' => 'Instellen als Standaard',
+                    'state'          => 'Provincie',
+                    'street-address' => 'Straatnaam en Huisnummer',
+                    'title'          => 'Adres',
+                    'vat-id'         => 'BTW-nummer',
+                ],
+
+                'edit' => [
+                    'city'           => 'Stad',
+                    'company-name'   => 'Bedrijfsnaam',
+                    'country'        => 'Land',
+                    'edit'           => 'Bewerken',
+                    'email'          => 'E-mail',
+                    'first-name'     => 'Voornaam',
+                    'last-name'      => 'Achternaam',
+                    'phone'          => 'Telefoon',
+                    'post-code'      => 'Postcode',
+                    'save'           => 'Opslaan',
+                    'select-country' => 'Selecteer Land',
+                    'state'          => 'Provincie',
+                    'street-address' => 'Straatnaam en Huisnummer',
+                    'title'          => 'Adres',
+                    'vat-id'         => 'BTW-nummer',
+                ],
             ],
 
             'orders' => [
@@ -163,6 +197,7 @@ return [
                     'cancel-confirm-msg' => 'Weet u zeker dat u deze bestelling wilt annuleren?',
                     'cancel-error'       => 'Uw bestelling kan niet worden geannuleerd.',
                     'cancel-success'     => 'Uw bestelling is geannuleerd',
+                    'contact'            => 'Contactpersoon',
                     'page-title'         => 'Bestelling #:order_id',
                     'payment-method'     => 'Betalingsmethode',
                     'reorder-btn-title'  => 'Herordenen',
@@ -347,9 +382,11 @@ return [
                 'welcome-guest'     => 'Welkom Gast',
                 'wishlist'          => 'Verlanglijst',
 
-                'desktop'           => [
+                'desktop' => [
                     'top' => [
-                        'default-locale' => 'Standaard taal',
+                        'default-locale' => 'Standaardtaal',
+                        'offer'          => 'Krijg TOT 40% KORTING op je 1e bestelling',
+                        'shop-now'       => 'KOOP NU',
                     ],
                 ],
             ],
@@ -376,52 +413,44 @@ return [
 
         'datagrid' => [
             'toolbar' => [
-                'mass-actions' => [
-                    'select-action' => 'Selecteer Actie',
-                    'select-option' => 'Selecteer Optie',
-                    'submit'        => 'Verzenden',
-                ],
+                'length-of' => ':length van',
+                'results'   => ':total Resultaten',
+                'selected'  => ':total Geselecteerd',
 
-                'filter' => [
-                    'title' => 'Filter',
+                'mass-actions' => [
+                    'must-select-a-mass-action'        => 'U moet een massa-actie selecteren.',
+                    'must-select-a-mass-action-option' => 'U moet een optie voor massa-actie selecteren.',
+                    'no-records-selected'              => 'Er zijn geen records geselecteerd.',
+                    'select-action'                    => 'Selecteer Actie',
                 ],
 
                 'search' => [
                     'title' => 'Zoeken',
                 ],
-            ],
 
-            'filters' => [
-                'title' => 'Filters toepassen',
+                'filter' => [
+                    'apply-filter' => 'Filters Toepassen',
+                    'title'        => 'Filteren',
 
-                'dropdown' => [
-                    'searchable' => [
-                        'atleast-two-chars' => 'Typ minimaal 2 tekens...',
-                        'no-results'        => 'Geen resultaten gevonden...',
+                    'dropdown' => [
+                        'select' => 'Selecteren',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'Typ minimaal 2 tekens...',
+                            'no-results'         => 'Geen resultaat gevonden...',
+                        ],
                     ],
-                ],
 
-                'custom-filters' => [
-                    'clear-all' => 'Alles wissen',
-                    'title'     => 'Aangepaste filters',
-                ],
-
-                'date-options' => [
-                    'last-month'        => 'Vorige maand',
-                    'last-six-months'   => 'Laatste 6 maanden',
-                    'last-three-months' => 'Laatste 3 maanden',
-                    'this-month'        => 'Deze maand',
-                    'this-week'         => 'Deze week',
-                    'this-year'         => 'Dit jaar',
-                    'today'             => 'Vandaag',
-                    'yesterday'         => 'Gisteren',
+                    'custom-filters' => [
+                        'clear-all' => 'Alles wissen',
+                    ],
                 ],
             ],
 
             'table' => [
                 'actions'              => 'Acties',
                 'next-page'            => 'Volgende Pagina',
-                'no-records-available' => 'Geen records beschikbaar.',
+                'no-records-available' => 'Geen Records Beschikbaar.',
                 'of'                   => 'van :total items',
                 'page-navigation'      => 'Pagina Navigatie',
                 'page-number'          => 'Paginanummer',
@@ -503,7 +532,8 @@ return [
                 ],
 
                 'bundle' => [
-                    'none' => 'Geen',
+                    'none'         => 'Geen',
+                    'total-amount' => 'Totaalbedrag',
                 ],
 
                 'downloadable' => [
@@ -594,7 +624,7 @@ return [
             ],
 
             'results' => [
-                'analysed-keywords' => 'Geanalyseerde Trefwoorden:',
+                'analyzed-keywords' => 'Geanalyseerde Trefwoorden:',
             ],
         ],
     ],
@@ -685,6 +715,16 @@ return [
                 'proceed-to-checkout' => 'Ga naar afrekenen',
                 'sub-total'           => 'Subtotaal',
                 'tax'                 => 'Belasting',
+
+                'estimate-shipping' => [
+                    'country'        => 'Land',
+                    'info'           => 'Voer uw bestemming in om een schatting te krijgen van de verzend- en belastingkosten.',
+                    'postcode'       => 'Postcode',
+                    'select-country' => 'Selecteer land',
+                    'select-state'   => 'Selecteer provincie',
+                    'state'          => 'Provincie',
+                    'title'          => 'Verzend- en belastingkosten schatten',
+                ],
             ],
         ],
 
@@ -765,11 +805,25 @@ return [
     ],
 
     'home' => [
+        'contact' => [
+            'about'         => 'Stuur ons een bericht en we zullen zo snel mogelijk reageren',
+            'desc'          => 'Waar denk je aan?',
+            'describe-here' => 'Beschrijf hier',
+            'email'         => 'E-mail',
+            'message'       => 'Bericht',
+            'name'          => 'Naam',
+            'phone-number'  => 'Telefoonnummer',
+            'submit'        => 'Verzenden',
+            'title'         => 'Neem contact met ons op',
+        ],
+
         'index' => [
             'offer'               => 'Krijg TOT 40% KORTING op je 1e bestelling - WINKEL NU',
             'resend-verify-email' => 'Verificatie-e-mail opnieuw verzenden',
             'verify-email'        => 'Verifieer je e-mailaccount',
         ],
+
+        'thanks-for-contact' => 'Bedankt voor het contact met ons opnemen met uw opmerkingen en vragen. We zullen spoedig reageren.',
     ],
 
     'partials' => [
@@ -779,7 +833,7 @@ return [
     ],
 
     'errors' => [
-        'go-to-home'   => 'Ga naar de startpagina',
+        'go-to-home' => 'Ga naar de startpagina',
 
         '404' => [
             'description' => 'Oeps! De pagina die je zoekt, is met vakantie. Het lijkt erop dat we niet hebben gevonden wat je zocht.',
@@ -869,6 +923,14 @@ return [
                 'subject'     => 'Je! Abonneer je op onze nieuwsbrief',
                 'unsubscribe' => 'Afmelden',
             ],
+        ],
+
+        'contact-us' => [
+            'contact-from'    => 'via het contactformulier op de website',
+            'reply-to-mail'   => 'antwoord alstublieft op deze e-mail.',
+            'reach-via-phone' => 'U kunt ons ook telefonisch bereiken op',
+            'inquiry-from'    => 'Vraag van',
+            'to'              => 'Om contact op te nemen met',
         ],
 
         'orders' => [

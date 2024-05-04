@@ -1,6 +1,52 @@
 {!! view_render_event('bagisto.shop.components.layouts.header.desktop.top.before') !!}
 
-<v-topbar></v-topbar>
+<v-topbar>
+    <!-- Shimmer Effect -->
+    <div class="flex items-center justify-between border border-b border-l-0 border-r-0 border-t-0 px-16 py-3">
+        <!-- Currencies -->
+        <div class="flex w-20 items-center justify-between gap-2.5">
+            <div
+                class="shimmer h-6 w-12 rounded"
+                role="presentation"
+            >
+            </div>
+
+            <div
+                class="shimmer h-6 w-6 rounded"
+                role="presentation"
+            >
+            </div>
+        </div>
+
+        <!-- Offers -->
+        <div
+            class="shimmer h-6 w-72 rounded"
+            role="presentation"
+        >
+        </div>
+
+        <!-- Locales -->
+        <div class="flex w-32 items-center justify-between gap-2.5">
+            <div
+                class="shimmer h-6 w-6"
+                role="presentation"
+            >
+            </div>
+
+            <div
+                class="shimmer h-6 w-14 rounded"
+                role="presentation"
+            >
+            </div>
+
+            <div
+                class="shimmer h-6 w-6"
+                role="presentation"
+            >
+            </div>
+        </div>
+    </div>
+</v-topbar>
 
 {!! view_render_event('bagisto.shop.components.layouts.header.desktop.top.after') !!}
 
@@ -43,7 +89,14 @@
             {!! view_render_event('bagisto.shop.components.layouts.header.desktop.top.currency_switcher.after') !!}
 
             <p class="text-xs font-medium">
-                Get UPTO 40% OFF on your 1st order <a href="{{ route('shop.home.index') }}" class="underline">SHOP NOW</a>
+                @lang('shop::app.components.layouts.header.desktop.top.offer') 
+                
+                <a 
+                    href="{{ route('shop.home.index') }}" 
+                    class="underline"
+                > 
+                    @lang('shop::app.components.layouts.header.desktop.top.shop-now')
+                </a>
             </p>
 
             {!! view_render_event('bagisto.shop.components.layouts.header.desktop.top.locale_switcher.before') !!}

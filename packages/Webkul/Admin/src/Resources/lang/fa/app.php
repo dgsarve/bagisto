@@ -36,6 +36,8 @@ return [
         'description-text' => 'لیست کل اعلان‌ها',
         'marked-success'   => 'اعلان با موفقیت علامت‌گذاری شد',
         'no-record'        => 'هیچ رکوردی یافت نشد',
+        'of'               => 'از',
+        'per-page'         => 'در هر صفحه',
         'read-all'         => 'علامت خوانده شده',
         'title'            => 'اعلان‌ها',
         'view-all'         => 'مشاهده همه',
@@ -47,15 +49,6 @@ return [
             'pending'         => 'سفارش در انتظار',
             'pending-payment' => 'در انتظار پرداخت',
             'processing'      => 'سفارش در حال پردازش',
-        ],
-
-        'status'  => [
-            'all'        => 'همه',
-            'canceled'   => 'کنسل شده',
-            'closed'     => 'بسته شده',
-            'completed'  => 'تکمیل شده',
-            'pending'    => 'در انتظار',
-            'processing' => 'در حال پردازش',
         ],
     ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => 'افزودن آدرس',
-                        'add-new-address'  => 'افزودن آدرس جدید',
                         'add-new'          => 'افزودن آدرس جدید',
+                        'add-new-address'  => 'افزودن آدرس جدید',
                         'addresses'        => 'آدرس‌ها',
                         'back'             => 'بازگشت',
                         'billing-address'  => 'آدرس صورتحساب',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => 'کد پستی',
                         'proceed'          => 'ادامه',
                         'same-as-billing'  => 'استفاده از همان آدرس برای حمل و نقل؟',
-                        'save-address'     => 'ذخیره در دفترچه آدرس',
                         'save'             => 'ذخیره',
+                        'save-address'     => 'ذخیره در دفترچه آدرس',
                         'select-country'   => 'انتخاب کشور',
                         'select-state'     => 'انتخاب استان',
                         'shipping-address' => 'آدرس حمل و نقل',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => 'آدرس خیابان',
                         'telephone'        => 'تلفن',
                         'title'            => 'آدرس',
+                        'vat-id'           => 'شناسه مالیاتی',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => 'صورتحساب #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount در هر واحد x :qty مقدار',
                 'create-invoice'     => 'ایجاد فاکتور',
                 'create-success'     => 'فاکتور با موفقیت ایجاد شد',
@@ -1069,6 +1063,7 @@ return [
                 'position'              => 'موقعیت',
                 'price'                 => 'قیمت',
                 'regex'                 => 'عبارت باقاعده (Regex)',
+                'regex-info'            => 'عبارت باید در دو نقطه‌گذاری دوتایی باشد.',
                 'save-btn'              => 'ذخیره ویژگی',
                 'select'                => 'انتخابی',
                 'select-type'           => 'نوع ویژگی انتخابی',
@@ -1084,7 +1079,7 @@ return [
                 'value-per-locale'      => 'مقدار برای مکان (Locale)',
                 'yes'                   => 'بله',
 
-                'option'                => [
+                'option' => [
                     'color'    => 'نمونه رنگ',
                     'dropdown' => 'لیست انتخابی',
                     'image'    => 'نمونه تصویر',
@@ -1132,6 +1127,7 @@ return [
                 'position'              => 'موقعیت',
                 'price'                 => 'قیمت',
                 'regex'                 => 'عبارت باقاعده (Regex)',
+                'regex-info'            => 'عبارت باید در دو نقطه‌گذاری دوتایی باشد.',
                 'save-btn'              => 'ذخیره ویژگی',
                 'select'                => 'انتخابی',
                 'select-type'           => 'نوع ویژگی انتخابی',
@@ -1639,7 +1635,7 @@ return [
                     'update-success' => 'با موفقیت به‌روزرسانی شد',
                 ],
 
-                'datagrid'   => [
+                'datagrid' => [
                     'approved'            => 'تایید شده',
                     'comment'             => 'نظر',
                     'customer-names'      => 'نام',
@@ -2341,9 +2337,11 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken'     => ':name قبلا استفاده شده است.',
-            'create-btn'        => 'ایجاد صفحه',
-            'title'             => 'صفحه‌ها',
+            'already-taken' => 'The :name has already been taken.',
+            'create-btn'    => 'Create Page',
+            'channel'       => 'Channel',
+            'language'      => 'Language',
+            'title'         => 'Pages',
 
             'datagrid' => [
                 'delete'              => 'حذف',
@@ -2395,7 +2393,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn' => 'ایجاد زبان',
                 'locale'     => 'زبان',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'ساخت ارز',
                 'currency'   => 'ارز',
@@ -2483,9 +2481,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'اقدام',
                     'allowed-errors'      => 'خطاهای مجاز',
                     'back-btn'            => 'بازگشت',
@@ -2493,9 +2491,9 @@ return [
                     'delete'              => 'حذف',
                     'download-sample'     => 'دانلود نمونه',
                     'field-separator'     => 'جداکننده فیلد',
-                    'file-info-example'   => 'برای مثال، در صورت تصاویر محصول، فایل‌ها باید در /project-root/storage/app/import/product-images قرار گیرند.',
-                    'file-info'           => 'از مسیر نسبی به /project-root/storage/app/import استفاده کنید، به عنوان مثال product-images، import-images.',
                     'file'                => 'فایل',
+                    'file-info'           => 'از مسیر نسبی به /project-root/storage/app/import استفاده کنید، به عنوان مثال product-images، import-images.',
+                    'file-info-example'   => 'برای مثال، در صورت تصاویر محصول، فایل‌ها باید در /project-root/storage/app/import/product-images قرار گیرند.',
                     'general'             => 'عمومی',
                     'images-directory'    => 'مسیر پوشه تصاویر',
                     'process-in-queue'    => 'پردازش در صف',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => 'استراتژی اعتبارسنجی',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'اقدام',
                     'allowed-errors'      => 'خطاهای مجاز',
                     'back-btn'            => 'بازگشت',
@@ -2517,9 +2515,9 @@ return [
                     'delete'              => 'حذف',
                     'download-sample'     => 'دانلود نمونه',
                     'field-separator'     => 'جداکننده فیلد',
-                    'file-info-example'   => 'برای مثال، در صورت تصاویر محصول، فایل‌ها باید در /project-root/storage/app/import/product-images قرار گیرند.',
-                    'file-info'           => 'از مسیر نسبی به /project-root/storage/app/import استفاده کنید، به عنوان مثال product-images، import-images.',
                     'file'                => 'فایل',
+                    'file-info'           => 'از مسیر نسبی به /project-root/storage/app/import استفاده کنید، به عنوان مثال product-images، import-images.',
+                    'file-info-example'   => 'برای مثال، در صورت تصاویر محصول، فایل‌ها باید در /project-root/storage/app/import/product-images قرار گیرند.',
                     'general'             => 'عمومی',
                     'images-directory'    => 'مسیر پوشه تصاویر',
                     'process-in-queue'    => 'پردازش در صف',
@@ -2533,11 +2531,11 @@ return [
                     'validation-strategy' => 'استراتژی اعتبارسنجی',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'ایجاد ورودی',
                     'title'        => 'ورودی‌ها',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => 'اقدامات',
                         'completed-at'  => 'اتمام یافته در',
                         'created'       => 'ایجاد شده',
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'بازگشت',
                     'completed-batches'       => 'کل دسته‌های انجام شده:',
                     'download-error-report'   => 'دانلود گزارش کامل',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'ساخت نرخ ارز',
                 'exchange-rate' => 'نرخ ارز',
@@ -2607,7 +2605,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'   => 'ویرایش نرخ‌های ارز',
+                    'title' => 'ویرایش نرخ‌های ارز',
                 ],
 
                 'datagrid' => [
@@ -2708,7 +2706,7 @@ return [
             'update-success'    => 'منابع موجودی با موفقیت به‌روزرسانی شدند.',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => 'آیا مطمئن هستید که می‌خواهید حذف کنید؟',
@@ -2738,7 +2736,7 @@ return [
                     ],
 
                     'edit' => [
-                        'title'   => 'ویرایش دسته‌بندی مالیاتی',
+                        'title' => 'ویرایش دسته‌بندی مالیاتی',
                     ],
 
                     'create-success' => 'دسته‌بندی مالیاتی جدید ایجاد شد.',
@@ -2748,7 +2746,7 @@ return [
                 ],
             ],
 
-            'rates'   => [
+            'rates' => [
                 'index' => [
                     'button-title' => 'ایجاد نرخ مالیات',
                     'tax-rate'     => 'نرخ مالیات',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => 'بازگشت',
-                    'basic-settings' => 'تنظیمات پایه',
                     'country'        => 'کشور',
                     'identifier'     => 'شناسه',
                     'save-btn'       => 'ذخیره نرخ مالیاتی',
                     'select-country' => 'انتخاب کشور',
                     'select-state'   => 'انتخاب استان',
+                    'settings'       => 'تنظیمات',
                     'state'          => 'استان',
                     'tax-rate'       => 'نرخ',
                     'title'          => 'ویرایش نرخ مالیات',
@@ -2934,7 +2932,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'    => 'ویرایش کاربر',
+                    'title' => 'ویرایش کاربر',
                 ],
             ],
 
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => 'مقدار: :value',
                 'value-input'                   => 'مقدار',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'               => 'افزودن خدمات',
                     'channels'              => 'کانال ها',
                     'delete'                => 'حذف',
@@ -3597,6 +3595,10 @@ return [
                     'admin-name'            => 'نام مدیر',
                     'admin-name-tip'        => 'این نام در تمامی ایمیل‌های مدیر نمایش داده می‌شود.',
                     'admin-page-limit'      => 'محدودیت تعداد صفحات پیش‌فرض (مدیر)',
+                    'contact-email'         => 'ایمیل تماس',
+                    'contact-email-tip'     => 'این آدرس ایمیل برای نمایش در پایین ایمیل‌ها استفاده می‌شود.',
+                    'contact-name'          => 'نام تماس',
+                    'contact-name-tip'      => 'این نام برای نمایش در پایین ایمیل‌ها استفاده می‌شود.',
                     'email-sender-name'     => 'نام فرستنده ایمیل',
                     'email-sender-name-tip' => 'این نام در صندوق ورودی مشتری نمایش داده می‌شود.',
                     'info'                  => 'نام فرستنده ایمیل، آدرس ایمیل فروشگاه، نام مدیر و آدرس ایمیل مدیر را تنظیم کنید.',

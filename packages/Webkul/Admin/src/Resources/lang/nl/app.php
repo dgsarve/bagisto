@@ -11,7 +11,7 @@ return [
         ],
 
         'forget-password' => [
-            'create'    => [
+            'create' => [
                 'email'           => 'Geregistreerd E-mailadres',
                 'email-not-exist' => 'E-mailadres Bestaat Niet',
                 'page-title'      => 'Wachtwoord Vergeten',
@@ -36,6 +36,8 @@ return [
         'description-text' => 'Alle meldingen weergeven',
         'marked-success'   => 'Melding Succesvol Gemarkeerd',
         'no-record'        => 'Geen Records Gevonden',
+        'of'               => 'van',
+        'per-page'         => 'Per pagina',
         'read-all'         => 'Markeer als Gelezen',
         'title'            => 'Meldingen',
         'view-all'         => 'Alles Bekijken',
@@ -47,15 +49,6 @@ return [
             'pending'         => 'Bestelling In Afwachting',
             'pending-payment' => 'In Afwachting van Betaling',
             'processing'      => 'Bestelling In Verwerking',
-        ],
-
-        'status' => [
-            'all'        => 'Alle',
-            'canceled'   => 'Geannuleerd',
-            'closed'     => 'Gesloten',
-            'completed'  => 'Voltooid',
-            'pending'    => 'In Afwachting',
-            'processing' => 'In Verwerking',
         ],
     ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => 'Adres toevoegen',
-                        'add-new-address'  => 'Nieuw adres toevoegen',
                         'add-new'          => 'Nieuw adres toevoegen',
+                        'add-new-address'  => 'Nieuw adres toevoegen',
                         'addresses'        => 'Adressen',
                         'back'             => 'Terug',
                         'billing-address'  => 'Factuuradres',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => 'Postcode',
                         'proceed'          => 'Doorgaan',
                         'same-as-billing'  => 'Hetzelfde adres gebruiken voor verzending?',
-                        'save-address'     => 'Opslaan in adresboek',
                         'save'             => 'Opslaan',
+                        'save-address'     => 'Opslaan in adresboek',
                         'select-country'   => 'Selecteer land',
                         'select-state'     => 'Selecteer provincie',
                         'shipping-address' => 'Verzendadres',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => 'Straatnaam en huisnummer',
                         'telephone'        => 'Telefoonnummer',
                         'title'            => 'Adres',
+                        'vat-id'           => 'BTW-nummer',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => 'Factuur #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount Per Eenheid x :qty Hoeveelheid',
                 'create-invoice'     => 'Factuur Maken',
                 'create-success'     => 'Factuur succesvol aangemaakt',
@@ -698,7 +692,7 @@ return [
                 'create-btn'    => 'Product aanmaken',
                 'title'         => 'Producten',
 
-                'create'     => [
+                'create' => [
                     'back-btn'                => 'Terug',
                     'configurable-attributes' => 'Configureerbare Eigenschappen',
                     'create-btn'              => 'Product aanmaken',
@@ -709,7 +703,7 @@ return [
                     'type'                    => 'Type',
                 ],
 
-                'datagrid'   => [
+                'datagrid' => [
                     'active'                        => 'Actief',
                     'attribute-family'              => 'Attribuutfamilie',
                     'attribute-family-value'        => 'Attribuutfamilie - :attribute_family',
@@ -1069,6 +1063,7 @@ return [
                 'position'                => 'Positie',
                 'price'                   => 'Prijs',
                 'regex'                   => 'Regex',
+                'regex-info'              => 'Expressie moet tussen dubbele aanhalingstekens staan.',
                 'save-btn'                => 'Attribuut Opslaan',
                 'select'                  => 'Selecteren',
                 'select-type'             => 'Selecteer Attribuuttype',
@@ -1132,6 +1127,7 @@ return [
                 'position'              => 'Positie',
                 'price'                 => 'Prijs',
                 'regex'                 => 'Regex',
+                'regex-info'            => 'Expressie moet tussen dubbele aanhalingstekens staan.',
                 'save-btn'              => 'Attribuut Opslaan',
                 'select'                => 'Selecteren',
                 'select-type'           => 'Selecteer Attribuuttype',
@@ -2342,8 +2338,10 @@ return [
     'cms' => [
         'index' => [
             'already-taken' => 'De :name is al in gebruik.',
-            'create-btn'    => 'Pagina Maken',
-            'title'         => 'Pagina’s',
+            'create-btn'    => 'Pagina aanmaken',
+            'channel'       => 'Kanaal',
+            'language'      => 'Taal',
+            'title'         => 'Pagina\'s',
 
             'datagrid' => [
                 'delete'              => 'Verwijderen',
@@ -2395,7 +2393,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn' => 'Taal Aanmaken',
                 'locale'     => 'Taal',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'Valuta Aanmaken',
                 'currency'   => 'Valuta',
@@ -2485,7 +2483,7 @@ return [
 
         'data-transfer'     => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'Actie',
                     'allowed-errors'      => 'Toegestane Fouten',
                     'back-btn'            => 'Terug',
@@ -2493,9 +2491,9 @@ return [
                     'delete'              => 'Verwijderen',
                     'download-sample'     => 'Voorbeeld Downloaden',
                     'field-separator'     => 'Veldscheider',
-                    'file-info-example'   => 'Bijvoorbeeld, in het geval van productafbeeldingen moeten bestanden worden geplaatst in de map /project-root/storage/app/import/product-images.',
-                    'file-info'           => 'Gebruik het relatieve pad naar /project-root/storage/app/import, bijv. productafbeeldingen, importafbeeldingen.',
                     'file'                => 'Bestand',
+                    'file-info'           => 'Gebruik het relatieve pad naar /project-root/storage/app/import, bijv. productafbeeldingen, importafbeeldingen.',
+                    'file-info-example'   => 'Bijvoorbeeld, in het geval van productafbeeldingen moeten bestanden worden geplaatst in de map /project-root/storage/app/import/product-images.',
                     'general'             => 'Algemeen',
                     'images-directory'    => 'Pad naar Afbeeldingenmap',
                     'process-in-queue'    => 'Verwerken In Wachtrij',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => 'Validatiestrategie',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'Actie',
                     'allowed-errors'      => 'Toegestane Fouten',
                     'back-btn'            => 'Terug',
@@ -2517,9 +2515,9 @@ return [
                     'delete'              => 'Verwijderen',
                     'download-sample'     => 'Voorbeeld Downloaden',
                     'field-separator'     => 'Veldscheider',
-                    'file-info-example'   => 'Bijvoorbeeld, in het geval van productafbeeldingen moeten bestanden worden geplaatst in de map /project-root/storage/app/import/product-images.',
-                    'file-info'           => 'Gebruik het relatieve pad naar /project-root/storage/app/import, bijv. productafbeeldingen, importafbeeldingen.',
                     'file'                => 'Bestand',
+                    'file-info'           => 'Gebruik het relatieve pad naar /project-root/storage/app/import, bijv. productafbeeldingen, importafbeeldingen.',
+                    'file-info-example'   => 'Bijvoorbeeld, in het geval van productafbeeldingen moeten bestanden worden geplaatst in de map /project-root/storage/app/import/product-images.',
                     'general'             => 'Algemeen',
                     'images-directory'    => 'Pad naar Afbeeldingenmap',
                     'process-in-queue'    => 'Verwerken In Wachtrij',
@@ -2533,7 +2531,7 @@ return [
                     'validation-strategy' => 'Validatiestrategie',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'Import Maken',
                     'title'        => 'Imports',
 
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'Terug',
                     'completed-batches'       => 'Totaal voltooide batches:',
                     'download-error-report'   => 'Volledig rapport downloaden',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'Wisselkoers Aanmaken',
                 'exchange-rate' => 'Wisselkoers',
@@ -2708,7 +2706,7 @@ return [
             'update-success'    => 'Voorraadbronnen succesvol bijgewerkt',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => 'Weet je zeker dat je wilt verwijderen?',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => 'Terug',
-                    'basic-settings' => 'Basisinstellingen',
                     'country'        => 'Land',
                     'identifier'     => 'Identificatie',
                     'save-btn'       => 'Belastingtarief Opslaan',
                     'select-country' => 'Selecteer Land',
                     'select-state'   => 'Selecteer Provincie',
+                    'settings'       => 'Instellingen',
                     'state'          => 'Provincie',
                     'tax-rate'       => 'Tarief',
                     'title'          => 'Belastingtarief Bewerken',
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => 'Waarde: :value',
                 'value-input'                   => 'Waarde',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => 'Diensten toevoegen',
                     'channels'           => 'Kanalen',
                     'delete'             => 'Verwijderen',
@@ -3592,17 +3590,21 @@ return [
                 'title' => 'Email',
 
                 'email-settings' => [
-                    'admin-email'            => 'Admin Email',
-                    'admin-email-tip'        => 'The email address of the admin for this channel to receive emails',
-                    'admin-name'             => 'Admin Name',
-                    'admin-name-tip'         => 'This name will be displayed in all admin emails',
-                    'admin-page-limit'       => 'Default Items Per Page (Admin)',
-                    'email-sender-name'      => 'Email Sender Name',
-                    'email-sender-name-tip'  => 'This name will be displayed in the customers inbox',
-                    'info'                   => 'Set email sender name, shop email address, admin name, and admin email address.',
-                    'shop-email-from'        => 'Shop Email Address',
-                    'shop-email-from-tip'    => 'The email address of this channel to send emails to your customers',
-                    'title'                  => 'Email Settings',
+                    'admin-email'           => 'Admin E-mail',
+                    'admin-email-tip'       => 'Het e-mailadres van de beheerder voor dit kanaal om e-mails te ontvangen',
+                    'admin-name'            => 'Beheerdersnaam',
+                    'admin-name-tip'        => 'Deze naam wordt weergegeven in alle administratieve e-mails',
+                    'admin-page-limit'      => 'Standaard aantal items per pagina (Beheerder)',
+                    'contact-email'         => 'Contact E-mail',
+                    'contact-email-tip'     => 'Het e-mailadres wordt onderaan uw e-mails getoond',
+                    'contact-name'          => 'Contactnaam',
+                    'contact-name-tip'      => 'Deze naam wordt onderaan uw e-mails getoond',
+                    'email-sender-name'     => 'Naam e-mailafzender',
+                    'email-sender-name-tip' => 'Deze naam wordt weergegeven in de inbox van klanten',
+                    'info'                  => 'Stel naam e-mailafzender, e-mailadres winkel, naam beheerder en e-mailadres beheerder in.',
+                    'shop-email-from'       => 'Winkel e-mailadres',
+                    'shop-email-from-tip'   => 'Het e-mailadres van dit kanaal om e-mails naar uw klanten te sturen',
+                    'title'                 => 'E-mailinstellingen',
                 ],
 
                 'notifications' => [
@@ -3669,40 +3671,40 @@ return [
                 ],
 
                 'payment-methods' => [
-                    'accepted-currencies'            => 'Geaccepteerde valuta',
-                    'accepted-currencies-info'       => 'Voeg valutacodes toe, gescheiden door een komma, bijv. USD, INR,...',
-                    'business-account'               => 'Zakelijk account',
-                    'cash-on-delivery'               => 'Rembours',
-                    'cash-on-delivery-info'          => 'Betaalmethode waarbij klanten contant betalen bij ontvangst van goederen of diensten aan hun deur.',
-                    'client-id'                      => 'Klant-ID',
-                    'client-id-info'                 => 'Gebruik "sb" voor testen.',
-                    'client-secret'                  => 'Geheime sleutel van klant',
-                    'client-secret-info'             => 'Voeg hier je geheime sleutel toe',
-                    'description'                    => 'Beschrijving',
-                    'generate-invoice'               => 'Genereer automatisch de factuur na het plaatsen van een bestelling',
-                    'generate-invoice-applicable'    => 'Van toepassing indien automatisch factuur genereren is ingeschakeld',
-                    'info'                           => 'Stel informatie over betaalmethoden in',
-                    'instructions'                   => 'Instructies',
-                    'logo'                           => 'Logo',
-                    'logo-information'               => 'Beeldresolutie moet zijn zoals 55px x 45px',
-                    'mailing-address'                => 'Stuur cheque naar',
-                    'money-transfer'                 => 'Geldoverdracht',
-                    'money-transfer-info'            => 'Overdracht van geld van de ene persoon of rekening naar de andere, vaak elektronisch, voor verschillende doeleinden zoals transacties of overmakingen.',
-                    'page-title'                     => 'Betaalmethoden',
-                    'paid'                           => 'Betaald',
-                    'paypal-smart-button'            => 'PayPal',
-                    'paypal-smart-button-info'       => 'PayPal Smart Button: Vereenvoudigt online betalingen met aanpasbare knoppen voor veilige, multimethodetransacties op websites en apps.',
-                    'paypal-standard'                => 'PayPal Standaard',
-                    'paypal-standard-info'           => 'PayPal Standaard is een basis PayPal-betalingsoptie voor online bedrijven, waarmee klanten kunnen betalen met hun PayPal-account of credit-/debetkaarten.',
-                    'pending'                        => 'In behandeling',
-                    'pending-payment'                => 'Betaling in behandeling',
-                    'processing'                     => 'Verwerking',
-                    'sandbox'                        => 'Zandbak',
-                    'set-invoice-status'             => 'Stel de factuurstatus in na het maken van de factuur op',
-                    'set-order-status'               => 'Stel de bestelstatus in na het maken van de factuur op',
-                    'sort-order'                     => 'Sorteervolgorde',
-                    'status'                         => 'Status',
-                    'title'                          => 'Titel',
+                    'accepted-currencies'         => 'Geaccepteerde valuta',
+                    'accepted-currencies-info'    => 'Voeg valutacodes toe, gescheiden door een komma, bijv. USD, INR,...',
+                    'business-account'            => 'Zakelijk account',
+                    'cash-on-delivery'            => 'Rembours',
+                    'cash-on-delivery-info'       => 'Betaalmethode waarbij klanten contant betalen bij ontvangst van goederen of diensten aan hun deur.',
+                    'client-id'                   => 'Klant-ID',
+                    'client-id-info'              => 'Gebruik "sb" voor testen.',
+                    'client-secret'               => 'Geheime sleutel van klant',
+                    'client-secret-info'          => 'Voeg hier je geheime sleutel toe',
+                    'description'                 => 'Beschrijving',
+                    'generate-invoice'            => 'Genereer automatisch de factuur na het plaatsen van een bestelling',
+                    'generate-invoice-applicable' => 'Van toepassing indien automatisch factuur genereren is ingeschakeld',
+                    'info'                        => 'Stel informatie over betaalmethoden in',
+                    'instructions'                => 'Instructies',
+                    'logo'                        => 'Logo',
+                    'logo-information'            => 'Beeldresolutie moet zijn zoals 55px x 45px',
+                    'mailing-address'             => 'Stuur cheque naar',
+                    'money-transfer'              => 'Geldoverdracht',
+                    'money-transfer-info'         => 'Overdracht van geld van de ene persoon of rekening naar de andere, vaak elektronisch, voor verschillende doeleinden zoals transacties of overmakingen.',
+                    'page-title'                  => 'Betaalmethoden',
+                    'paid'                        => 'Betaald',
+                    'paypal-smart-button'         => 'PayPal',
+                    'paypal-smart-button-info'    => 'PayPal Smart Button: Vereenvoudigt online betalingen met aanpasbare knoppen voor veilige, multimethodetransacties op websites en apps.',
+                    'paypal-standard'             => 'PayPal Standaard',
+                    'paypal-standard-info'        => 'PayPal Standaard is een basis PayPal-betalingsoptie voor online bedrijven, waarmee klanten kunnen betalen met hun PayPal-account of credit-/debetkaarten.',
+                    'pending'                     => 'In behandeling',
+                    'pending-payment'             => 'Betaling in behandeling',
+                    'processing'                  => 'Verwerking',
+                    'sandbox'                     => 'Zandbak',
+                    'set-invoice-status'          => 'Stel de factuurstatus in na het maken van de factuur op',
+                    'set-order-status'            => 'Stel de bestelstatus in na het maken van de factuur op',
+                    'sort-order'                  => 'Sorteervolgorde',
+                    'status'                      => 'Status',
+                    'title'                       => 'Titel',
                 ],
 
                 'order-settings' => [

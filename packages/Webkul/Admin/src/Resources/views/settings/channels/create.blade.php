@@ -16,7 +16,7 @@
             </p>
 
             <div class="flex items-center gap-x-2.5">
-                <!-- Cancel Button -->
+                <!-- Back Button -->
                 <a
                     href="{{ route('admin.settings.channels.index') }}"
                     class="transparent-button hover:bg-gray-200 dark:text-white dark:hover:bg-gray-800"
@@ -202,14 +202,9 @@
                             type="select"
                             id="theme"
                             name="theme"
-                            :value="old('theme')"
+                            :value="config('themes.admin-default')"
                             :label="trans('admin::app.settings.channels.create.theme')"
                         >
-                            <!-- Default Option -->
-                            <option value="">
-                                @lang('admin::app.settings.channels.create.select-theme')
-                            </option>
-
                             @foreach (config('themes.shop') as $themeCode => $theme)
                                 <option value="{{ $themeCode }}" {{ old('theme') == $themeCode ? 'selected' : '' }}>
                                     {{ $theme['name'] }}

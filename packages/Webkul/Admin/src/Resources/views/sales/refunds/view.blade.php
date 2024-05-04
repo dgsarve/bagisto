@@ -13,7 +13,7 @@
                 @lang('admin::app.sales.refunds.view.title', ['refund_id' => $refund->id])
             </p>
 
-            <!-- Cancel Button -->
+            <!-- Back Button -->
             <div class="flex items-center gap-x-2.5">
                 <a
                     href="{{ route('admin.sales.refunds.index') }}"
@@ -61,7 +61,7 @@
                                         {{ $item->name }}
                                     </p>
 
-                                    <!-- Product Attribute Detailes -->
+                                    <!-- Product Attribute Details -->
                                     <div class="flex flex-col place-items-start gap-1.5">
                                         @if (isset($item->additional['attributes']))
                                             @foreach ($item->additional['attributes'] as $attribute)

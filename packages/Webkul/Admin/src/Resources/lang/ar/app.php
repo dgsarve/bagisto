@@ -11,7 +11,7 @@ return [
         ],
 
         'forget-password' => [
-            'create'    => [
+            'create' => [
                 'email'           => 'البريد الإلكتروني المسجل',
                 'email-not-exist' => 'البريد الإلكتروني غير موجود',
                 'page-title'      => 'نسيت كلمة المرور',
@@ -36,6 +36,8 @@ return [
         'description-text' => 'قائمة جميع الإشعارات',
         'marked-success'   => 'تم وضع علامة على الإشعار بنجاح',
         'no-record'        => 'لم يتم العثور على سجلات',
+        'of'               => 'من',
+        'per-page'         => 'في الصفحة',
         'read-all'         => 'وضع علامة كمقروء',
         'title'            => 'الإشعارات',
         'view-all'         => 'عرض الكل',
@@ -47,15 +49,6 @@ return [
             'pending'         => 'الطلب معلق',
             'pending-payment' => 'انتظار الدفع',
             'processing'      => 'جاري معالجة الطلب',
-        ],
-
-        'status' => [
-            'all'        => 'الكل',
-            'canceled'   => 'ملغى',
-            'closed'     => 'مغلق',
-            'completed'  => 'مكتمل',
-            'pending'    => 'معلق',
-            'processing' => 'قيد المعالجة',
         ],
     ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => 'إضافة عنوان',
-                        'add-new-address'  => 'إضافة عنوان جديد',
                         'add-new'          => 'إضافة عنوان جديد',
+                        'add-new-address'  => 'إضافة عنوان جديد',
                         'addresses'        => 'العناوين',
                         'back'             => 'رجوع',
                         'billing-address'  => 'عنوان الفوترة',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => 'الرمز البريدي',
                         'proceed'          => 'المتابعة',
                         'same-as-billing'  => 'استخدم نفس العنوان للشحن؟',
-                        'save-address'     => 'حفظ هذا في دفتر العناوين',
                         'save'             => 'حفظ',
+                        'save-address'     => 'حفظ هذا في دفتر العناوين',
                         'select-country'   => 'اختر البلد',
                         'select-state'     => 'اختر المنطقة',
                         'shipping-address' => 'عنوان الشحن',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => 'عنوان الشارع',
                         'telephone'        => 'رقم الهاتف',
                         'title'            => 'العنوان',
+                        'vat-id'           => 'الرقم الضريبي',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => 'الفاتورة #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount لكل وحدة × :qty الكمية',
                 'create-invoice'     => 'إنشاء فاتورة',
                 'create-success'     => 'تم إنشاء الفاتورة بنجاح',
@@ -698,7 +692,7 @@ return [
                 'create-btn'    => 'إنشاء منتج',
                 'title'         => 'المنتجات',
 
-                'create'     => [
+                'create' => [
                     'back-btn'                => 'عودة',
                     'configurable-attributes' => 'خصائص قابلة للتكوين',
                     'create-btn'              => 'إنشاء منتج',
@@ -709,7 +703,7 @@ return [
                     'type'                    => 'النوع',
                 ],
 
-                'datagrid'   => [
+                'datagrid' => [
                     'active'                        => 'نشط',
                     'attribute-family'              => 'عائلة السمة',
                     'attribute-family-value'        => 'عائلة السمة - :attribute_family',
@@ -1069,6 +1063,7 @@ return [
                 'position'              => 'الموقع',
                 'price'                 => 'السعر',
                 'regex'                 => 'تعبير عادي',
+                'regex-info'            => 'يجب أن تكون التعبيرات بين علامات اقتباس مزدوجة.',
                 'save-btn'              => 'حفظ السمة',
                 'select'                => 'اختيار',
                 'select-type'           => 'نوع السمة المختارة',
@@ -1084,7 +1079,7 @@ return [
                 'value-per-locale'      => 'القيمة لكل لغة',
                 'yes'                   => 'نعم',
 
-                'option'                => [
+                'option' => [
                     'color'    => 'عينة لون',
                     'dropdown' => 'قائمة منسدلة',
                     'image'    => 'عينة صورة',
@@ -1132,6 +1127,7 @@ return [
                 'position'              => 'الموقع',
                 'price'                 => 'السعر',
                 'regex'                 => 'تعبير عادي',
+                'regex-info'            => 'يجب أن تكون التعبيرات بين علامات اقتباس مزدوجة.',
                 'save-btn'              => 'حفظ السمة',
                 'select'                => 'اختيار',
                 'select-type'           => 'نوع السمة المختارة',
@@ -1147,7 +1143,7 @@ return [
                 'value-per-locale'      => 'القيمة لكل لغة',
                 'yes'                   => 'نعم',
 
-                'option'                 => [
+                'option' => [
                     'color'    => 'عينة لون',
                     'dropdown' => 'قائمة منسدلة',
                     'image'    => 'عينة صورة',
@@ -1497,7 +1493,7 @@ return [
                         'view'            => 'عرض',
                     ],
 
-                    'reviews'    => [
+                    'reviews' => [
                         'approved'      => 'تم الموافقة عليه',
                         'comment'       => 'التعليق',
                         'created-at'    => 'تاريخ الإنشاء',
@@ -1732,7 +1728,7 @@ return [
                     ],
                 ],
 
-                'create'    => [
+                'create' => [
                     'active'          => 'نشط',
                     'back-btn'        => 'رجوع',
                     'channel'         => 'القناة',
@@ -1754,7 +1750,7 @@ return [
                     'title'           => 'إنشاء حملة',
                 ],
 
-                'edit'    => [
+                'edit' => [
                     'active'          => 'نشط',
                     'audience'        => 'الجمهور',
                     'back-btn'        => 'رجوع',
@@ -1782,7 +1778,7 @@ return [
             ],
 
             'events' => [
-                'index'  => [
+                'index' => [
                     'create-btn' => 'إنشاء حدث',
                     'event'      => 'الحدث',
                     'title'      => 'الأحداث',
@@ -1796,7 +1792,7 @@ return [
                         'name'    => 'الاسم',
                     ],
 
-                    'create'   => [
+                    'create' => [
                         'date'           => 'التاريخ',
                         'delete-warning' => 'هل أنت متأكد أنك تريد أن تقوم بهذا الإجراء؟',
                         'description'    => 'الوصف',
@@ -2341,8 +2337,10 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken' => ':name تم أخذه بالفعل.',
+            'already-taken' => 'تم استخدام :name بالفعل.',
             'create-btn'    => 'إنشاء صفحة',
+            'channel'       => 'القناة',
+            'language'      => 'اللغة',
             'title'         => 'الصفحات',
 
             'datagrid' => [
@@ -2395,7 +2393,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn'    => 'إنشاء لغة',
                 'locale'        => 'اللغة',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'إنشاء عملة',
                 'currency'   => 'العملة',
@@ -2483,9 +2481,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'الإجراء',
                     'allowed-errors'      => 'الأخطاء المسموح بها',
                     'back-btn'            => 'رجوع',
@@ -2493,9 +2491,9 @@ return [
                     'delete'              => 'حذف',
                     'download-sample'     => 'تحميل النموذج',
                     'field-separator'     => 'فاصل الحقل',
-                    'file-info-example'   => 'على سبيل المثال، في حالة صور المنتجات، يجب وضع الملفات في مجلد /project-root/storage/app/import/product-images',
-                    'file-info'           => 'استخدم المسار النسبي إلى /project-root/storage/app/import، على سبيل المثال، product-images، import-images.',
                     'file'                => 'الملف',
+                    'file-info'           => 'استخدم المسار النسبي إلى /project-root/storage/app/import، على سبيل المثال، product-images، import-images.',
+                    'file-info-example'   => 'على سبيل المثال، في حالة صور المنتجات، يجب وضع الملفات في مجلد /project-root/storage/app/import/product-images',
                     'general'             => 'عام',
                     'images-directory'    => 'مسار مجلد الصور',
                     'process-in-queue'    => 'معالجة في الطابور',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => 'استراتيجية التحقق',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'الإجراء',
                     'allowed-errors'      => 'الأخطاء المسموح بها',
                     'back-btn'            => 'رجوع',
@@ -2517,9 +2515,9 @@ return [
                     'delete'              => 'حذف',
                     'download-sample'     => 'تحميل النموذج',
                     'field-separator'     => 'فاصل الحقل',
-                    'file-info-example'   => 'على سبيل المثال، في حالة صور المنتجات، يجب وضع الملفات في مجلد /project-root/storage/app/import/product-images',
-                    'file-info'           => 'استخدم المسار النسبي إلى /project-root/storage/app/import، على سبيل المثال، product-images، import-images.',
                     'file'                => 'الملف',
+                    'file-info'           => 'استخدم المسار النسبي إلى /project-root/storage/app/import، على سبيل المثال، product-images، import-images.',
+                    'file-info-example'   => 'على سبيل المثال، في حالة صور المنتجات، يجب وضع الملفات في مجلد /project-root/storage/app/import/product-images',
                     'general'             => 'عام',
                     'images-directory'    => 'مسار مجلد الصور',
                     'process-in-queue'    => 'معالجة في الطابور',
@@ -2533,11 +2531,11 @@ return [
                     'validation-strategy' => 'استراتيجية التحقق',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'إنشاء استيراد',
                     'title'        => 'الاستيرادات',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => 'الإجراءات',
                         'completed-at'  => 'انتهى في',
                         'created'       => 'تم الإنشاء',
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'العودة',
                     'completed-batches'       => 'إجمالي الدُفعات المكتملة:',
                     'download-error-report'   => 'تحميل التقرير الكامل',
@@ -2572,8 +2570,8 @@ return [
                     'total-invalid-rows'      => 'إجمالي الصفوف غير الصالحة:',
                     'total-rows-processed'    => 'إجمالي الصفوف المعالجة:',
                     'total-updated'           => 'إجمالي السجلات التي تم تحديثها:',
-                    'validate-info'           => 'انقر على التحقق من البيانات لفحص عملية الاستيراد الخاصة بك.',
                     'validate'                => 'التحقق',
+                    'validate-info'           => 'انقر على التحقق من البيانات لفحص عملية الاستيراد الخاصة بك.',
                     'validating-info'         => 'بدأت البيانات في القراءة والتحقق',
                     'validation-failed-info'  => 'الاستيراد الخاص بك غير صالح. يرجى إصلاح الأخطاء التالية والمحاولة مرة أخرى.',
                     'validation-success-info' => 'الاستيراد الخاص بك صالح. انقر على الاستيراد لبدء عملية الاستيراد.',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'إنشاء سعر صرف',
                 'exchange-rate' => 'سعر الصرف',
@@ -2748,7 +2746,7 @@ return [
                 ],
             ],
 
-            'rates'   => [
+            'rates' => [
                 'index' => [
                     'button-title' => 'إنشاء معدل الضريبة',
                     'tax-rate'     => 'سعر الضريبة',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => 'عودة',
-                    'basic-settings' => 'الإعدادات الأساسية',
                     'country'        => 'البلد',
                     'identifier'     => 'المعرف',
                     'save-btn'       => 'حفظ سعر الضريبة',
                     'select-country' => 'اختر البلد',
                     'select-state'   => 'اختر الولاية',
+                    'settings'       => 'الإعدادات',
                     'state'          => 'الولاية',
                     'tax-rate'       => 'السعر',
                     'title'          => 'تعديل سعر الضريبة',
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => 'القيمة: :value',
                 'value-input'                   => 'القيمة',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => 'أضف الخدمات',
                     'channels'           => 'القنوات',
                     'delete'             => 'يمسح',
@@ -3597,6 +3595,10 @@ return [
                     'admin-name'            => 'اسم المشرف',
                     'admin-name-tip'        => 'سيتم عرض هذا الاسم في جميع رسائل البريد الإلكتروني الإدارية',
                     'admin-page-limit'      => 'عدد العناصر الافتراضية في كل صفحة (الإدارة)',
+                    'contact-email'         => 'عنوان البريد الإلكتروني للاتصال',
+                    'contact-email-tip'     => 'سيتم عرض هذا العنوان في أسفل رسائل البريد الإلكتروني الخاصة بك',
+                    'contact-name'          => 'اسم الاتصال',
+                    'contact-name-tip'      => 'سيتم عرض هذا الاسم في أسفل رسائل البريد الإلكتروني الخاصة بك',
                     'email-sender-name'     => 'اسم مُرسل البريد الإلكتروني',
                     'email-sender-name-tip' => 'سيتم عرض هذا الاسم في صندوق الوارد للعملاء',
                     'info'                  => 'تعيين اسم مُرسل البريد الإلكتروني، عنوان البريد الإلكتروني للمتجر، اسم المشرف، وعنوان البريد الإلكتروني للمشرف.',

@@ -36,6 +36,8 @@ return [
         'description-text' => 'Listar todas as notificações',
         'marked-success'   => 'Notificação Marcada com Sucesso',
         'no-record'        => 'Nenhum Registro Encontrado',
+        'of'               => 'de',
+        'per-page'         => 'Por página',
         'read-all'         => 'Marcar como Lido',
         'title'            => 'Notificações',
         'view-all'         => 'Ver Todas',
@@ -47,15 +49,6 @@ return [
             'pending'         => 'Pedido Pendente',
             'pending-payment' => 'Pagamento Pendente',
             'processing'      => 'Pedido em Processamento',
-        ],
-
-        'status' => [
-            'all'        => 'Todos',
-            'canceled'   => 'Cancelado',
-            'closed'     => 'Fechado',
-            'completed'  => 'Concluído',
-            'pending'    => 'Pendente',
-            'processing' => 'Processamento',
         ],
     ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => 'Adicionar Endereço',
-                        'add-new-address'  => 'Adicionar novo endereço',
                         'add-new'          => 'Adicionar novo endereço',
+                        'add-new-address'  => 'Adicionar novo endereço',
                         'addresses'        => 'Endereços',
                         'back'             => 'Voltar',
                         'billing-address'  => 'Endereço de Cobrança',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => 'CEP',
                         'proceed'          => 'Continuar',
                         'same-as-billing'  => 'Usar o mesmo endereço para entrega?',
-                        'save-address'     => 'Salvar este endereço',
                         'save'             => 'Salvar',
+                        'save-address'     => 'Salvar este endereço',
                         'select-country'   => 'Selecionar País',
                         'select-state'     => 'Selecionar Estado',
                         'shipping-address' => 'Endereço de Entrega',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => 'Endereço',
                         'telephone'        => 'Telefone',
                         'title'            => 'Endereço',
+                        'vat-id'           => 'NIF',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => 'Fatura #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount Por Unidade x :qty Quantidade',
                 'create-invoice'     => 'Criar Fatura',
                 'create-success'     => 'Fatura criada com sucesso',
@@ -710,30 +704,30 @@ return [
                 ],
 
                 'datagrid' => [
-                    'active'                        => 'Ativo',
-                    'attribute-family'              => 'Família de Atributos',
-                    'attribute-family-value'        => 'Família de Atributos - :attribute_family',
-                    'category'                      => 'Categoria',
-                    'copy-of'                       => 'Cópia de :value',
-                    'copy-of-slug'                  => 'cópia-de-:value',
-                    'delete'                        => 'Excluir',
-                    'disable'                       => 'Desativar',
-                    'id'                            => 'ID',
-                    'id-value'                      => 'ID - :id',
-                    'image'                         => 'Imagem',
-                    'mass-delete-success'           => 'Produtos Selecionados Excluídos com Sucesso',
-                    'mass-update-success'           => 'Produtos Selecionados Atualizados com Sucesso',
-                    'name'                          => 'Nome',
-                    'out-of-stock'                  => 'Fora de Estoque',
-                    'price'                         => 'Preço',
-                    'product-image'                 => 'Imagem do Produto',
-                    'qty'                           => 'Quantidade',
-                    'qty-value'                     => ':qty Disponíveis',
-                    'sku'                           => 'SKU',
-                    'sku-value'                     => 'SKU - :sku',
-                    'status'                        => 'Status',
-                    'type'                          => 'Tipo',
-                    'update-status'                 => 'Atualizar Status',
+                    'active'                 => 'Ativo',
+                    'attribute-family'       => 'Família de Atributos',
+                    'attribute-family-value' => 'Família de Atributos - :attribute_family',
+                    'category'               => 'Categoria',
+                    'copy-of'                => 'Cópia de :value',
+                    'copy-of-slug'           => 'cópia-de-:value',
+                    'delete'                 => 'Excluir',
+                    'disable'                => 'Desativar',
+                    'id'                     => 'ID',
+                    'id-value'               => 'ID - :id',
+                    'image'                  => 'Imagem',
+                    'mass-delete-success'    => 'Produtos Selecionados Excluídos com Sucesso',
+                    'mass-update-success'    => 'Produtos Selecionados Atualizados com Sucesso',
+                    'name'                   => 'Nome',
+                    'out-of-stock'           => 'Fora de Estoque',
+                    'price'                  => 'Preço',
+                    'product-image'          => 'Imagem do Produto',
+                    'qty'                    => 'Quantidade',
+                    'qty-value'              => ':qty Disponíveis',
+                    'sku'                    => 'SKU',
+                    'sku-value'              => 'SKU - :sku',
+                    'status'                 => 'Status',
+                    'type'                   => 'Tipo',
+                    'update-status'          => 'Atualizar Status',
                 ],
             ],
 
@@ -1069,6 +1063,7 @@ return [
                 'position'              => 'Posição',
                 'price'                 => 'Preço',
                 'regex'                 => 'Expressão Regular (Regex)',
+                'regex-info'            => 'A expressão deve estar entre aspas duplas.',
                 'save-btn'              => 'Salvar Atributo',
                 'select'                => 'Seleção',
                 'select-type'           => 'Selecionar Tipo de Atributo',
@@ -1132,6 +1127,7 @@ return [
                 'position'              => 'Posição',
                 'price'                 => 'Preço',
                 'regex'                 => 'Expressão Regular (Regex)',
+                'regex-info'            => 'A expressão deve estar entre aspas duplas.',
                 'save-btn'              => 'Salvar Atributo',
                 'select'                => 'Seleção',
                 'select-type'           => 'Selecionar Tipo de Atributo',
@@ -2341,9 +2337,11 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken'     => 'O :name já está em uso.',
-            'create-btn'        => 'Criar Página',
-            'title'             => 'Páginas',
+            'already-taken' => 'O :name já foi utilizado.',
+            'create-btn'    => 'Criar Página',
+            'channel'       => 'Canal',
+            'language'      => 'Idioma',
+            'title'         => 'Páginas',
 
             'datagrid' => [
                 'delete'              => 'Excluir',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'Criar Moeda',
                 'currency'   => 'Moeda',
@@ -2483,9 +2481,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'Ação',
                     'allowed-errors'      => 'Erros permitidos',
                     'back-btn'            => 'Voltar',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => 'Estratégia de Validação',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'Ação',
                     'allowed-errors'      => 'Erros permitidos',
                     'back-btn'            => 'Voltar',
@@ -2533,11 +2531,11 @@ return [
                     'validation-strategy' => 'Estratégia de Validação',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'Criar Importação',
                     'title'        => 'Importações',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => 'Ações',
                         'completed-at'  => 'Concluído em',
                         'created'       => 'Criado',
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'Voltar',
                     'completed-batches'       => 'Lotes Concluídos Totais:',
                     'download-error-report'   => 'Baixar Relatório Completo',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'Criar Taxa de Câmbio',
                 'exchange-rate' => 'Taxa de Câmbio',
@@ -2607,7 +2605,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'   => 'Editar Taxas de Câmbio',
+                    'title' => 'Editar Taxas de Câmbio',
                 ],
 
                 'datagrid' => [
@@ -2708,7 +2706,7 @@ return [
             'update-success'    => 'Fontes de Inventário atualizadas com sucesso',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => 'Tem certeza de que deseja excluir?',
@@ -2748,7 +2746,7 @@ return [
                 ],
             ],
 
-            'rates'   => [
+            'rates' => [
                 'index' => [
                     'button-title' => 'Criar taxa de imposto',
                     'tax-rate'     => 'Taxa de Imposto',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => 'Voltar',
-                    'basic-settings' => 'Configurações Básicas',
                     'country'        => 'País',
                     'identifier'     => 'Identificador',
                     'save-btn'       => 'Salvar Taxa de Imposto',
                     'select-country' => 'Selecionar País',
                     'select-state'   => 'Selecionar Estado',
+                    'settings'       => 'Configurações',
                     'state'          => 'Estado',
                     'tax-rate'       => 'Taxa',
                     'title'          => 'Editar Taxa de Imposto',
@@ -2934,7 +2932,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'    => 'Editar Usuário',
+                    'title' => 'Editar Usuário',
                 ],
             ],
 
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => 'Valor: :value',
                 'value-input'                   => 'Valor',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => 'Adicionar Serviços',
                     'channels'           => 'Canais',
                     'delete'             => 'Excluir',
@@ -3391,9 +3389,9 @@ return [
                     'title' => 'Inventário',
 
                     'stock-options' => [
-                        'allow-back-orders'  => 'Permitir Pedidos em Atraso',
-                        'title'              => 'Opções de Estoque',
-                        'title-info'         => 'Opções de estoque são contratos de investimento que concedem o direito de comprar ou vender ações da empresa a um preço predeterminado, influenciando os lucros potenciais.',
+                        'allow-back-orders' => 'Permitir Pedidos em Atraso',
+                        'title'             => 'Opções de Estoque',
+                        'title-info'        => 'Opções de estoque são contratos de investimento que concedem o direito de comprar ou vender ações da empresa a um preço predeterminado, influenciando os lucros potenciais.',
                     ],
                 ],
 
@@ -3592,17 +3590,21 @@ return [
                 'title' => 'Email',
 
                 'email-settings' => [
-                    'admin-email'            => 'E-mail do Admin',
-                    'admin-email-tip'        => 'O endereço de e-mail do admin deste canal para receber e-mails',
-                    'admin-name'             => 'Nome do Admin',
-                    'admin-name-tip'         => 'Este nome será exibido em todos os e-mails do admin',
-                    'admin-page-limit'       => 'Itens por Página Padrão (Admin)',
-                    'email-sender-name'      => 'Nome do Remetente de E-mail',
-                    'email-sender-name-tip'  => 'Este nome será exibido na caixa de entrada do cliente',
-                    'info'                   => 'Defina o nome do remetente de e-mail, o endereço de e-mail da loja, o nome do admin e o endereço de e-mail do admin.',
-                    'shop-email-from'        => 'Endereço de E-mail da Loja',
-                    'shop-email-from-tip'    => 'O endereço de e-mail deste canal para enviar e-mails aos seus clientes',
-                    'title'                  => 'Configurações de E-mail',
+                    'admin-email'           => 'E-mail do Admin',
+                    'admin-email-tip'       => 'O endereço de e-mail do admin deste canal para receber e-mails',
+                    'admin-name'            => 'Nome do Admin',
+                    'admin-name-tip'        => 'Este nome será exibido em todos os e-mails do admin',
+                    'admin-page-limit'      => 'Itens por Página Padrão (Admin)',
+                    'contact-email'         => 'E-mail de Contato',
+                    'contact-email-tip'     => 'O endereço de e-mail será mostrado no final de seus e-mails',
+                    'contact-name'          => 'Nome de Contato',
+                    'contact-name-tip'      => 'Este nome será mostrado no final de seus e-mails',
+                    'email-sender-name'     => 'Nome do Remetente de E-mail',
+                    'email-sender-name-tip' => 'Este nome será exibido na caixa de entrada do cliente',
+                    'info'                  => 'Defina o nome do remetente de e-mail, o endereço de e-mail da loja, o nome do admin e o endereço de e-mail do admin.',
+                    'shop-email-from'       => 'Endereço de E-mail da Loja',
+                    'shop-email-from-tip'   => 'O endereço de e-mail deste canal para enviar e-mails aos seus clientes',
+                    'title'                 => 'Configurações de E-mail',
                 ],
 
                 'notifications' => [
@@ -3669,40 +3671,40 @@ return [
                 ],
 
                 'payment-methods' => [
-                    'accepted-currencies'            => 'Moedas aceitas',
-                    'accepted-currencies-info'       => 'Adicione códigos de moeda separados por vírgula, por exemplo, USD, INR,...',
-                    'business-account'               => 'Conta empresarial',
-                    'cash-on-delivery'               => 'Dinheiro na entrega',
-                    'cash-on-delivery-info'          => 'Método de pagamento em que os clientes pagam em dinheiro ao receber os produtos ou serviços em sua porta.',
-                    'client-id'                      => 'ID do cliente',
-                    'client-id-info'                 => 'Use "sb" para testes.',
-                    'client-secret'                  => 'Segredo do cliente',
-                    'client-secret-info'             => 'Adicione sua chave secreta aqui',
-                    'description'                    => 'Descrição',
-                    'generate-invoice'               => 'Gerar automaticamente a fatura após fazer um pedido',
-                    'generate-invoice-applicable'    => 'Aplicável se a geração automática de faturas estiver ativada',
-                    'info'                           => 'Configurar informações sobre os métodos de pagamento',
-                    'instructions'                   => 'Instruções',
-                    'logo'                           => 'Logo',
-                    'logo-information'               => 'A resolução da imagem deve ser de aproximadamente 55px x 45px',
-                    'mailing-address'                => 'Enviar cheque para',
-                    'money-transfer'                 => 'Transferência de dinheiro',
-                    'money-transfer-info'            => 'Transferência de fundos de uma pessoa ou conta para outra, muitas vezes eletronicamente, para diversos fins, como transações ou remessas.',
-                    'page-title'                     => 'Métodos de pagamento',
-                    'paid'                           => 'Pago',
-                    'paypal-smart-button'            => 'PayPal',
-                    'paypal-smart-button-info'       => 'Botão Inteligente do PayPal: Simplifica os pagamentos online com botões personalizáveis para transações seguras e multimétodo em sites e aplicativos.',
-                    'paypal-standard'                => 'PayPal Padrão',
-                    'paypal-standard-info'           => 'O PayPal Padrão é uma opção de pagamento básica do PayPal para negócios online, permitindo que os clientes paguem usando suas contas do PayPal ou cartões de crédito/débito.',
-                    'pending'                        => 'Pendente',
-                    'pending-payment'                => 'Pagamento pendente',
-                    'processing'                     => 'Processando',
-                    'sandbox'                        => 'Ambiente de testes',
-                    'set-invoice-status'             => 'Defina o status da fatura após criar a fatura para',
-                    'set-order-status'               => 'Defina o status do pedido após criar a fatura para',
-                    'sort-order'                     => 'Ordem de classificação',
-                    'status'                         => 'Status',
-                    'title'                          => 'Título',
+                    'accepted-currencies'         => 'Moedas aceitas',
+                    'accepted-currencies-info'    => 'Adicione códigos de moeda separados por vírgula, por exemplo, USD, INR,...',
+                    'business-account'            => 'Conta empresarial',
+                    'cash-on-delivery'            => 'Dinheiro na entrega',
+                    'cash-on-delivery-info'       => 'Método de pagamento em que os clientes pagam em dinheiro ao receber os produtos ou serviços em sua porta.',
+                    'client-id'                   => 'ID do cliente',
+                    'client-id-info'              => 'Use "sb" para testes.',
+                    'client-secret'               => 'Segredo do cliente',
+                    'client-secret-info'          => 'Adicione sua chave secreta aqui',
+                    'description'                 => 'Descrição',
+                    'generate-invoice'            => 'Gerar automaticamente a fatura após fazer um pedido',
+                    'generate-invoice-applicable' => 'Aplicável se a geração automática de faturas estiver ativada',
+                    'info'                        => 'Configurar informações sobre os métodos de pagamento',
+                    'instructions'                => 'Instruções',
+                    'logo'                        => 'Logo',
+                    'logo-information'            => 'A resolução da imagem deve ser de aproximadamente 55px x 45px',
+                    'mailing-address'             => 'Enviar cheque para',
+                    'money-transfer'              => 'Transferência de dinheiro',
+                    'money-transfer-info'         => 'Transferência de fundos de uma pessoa ou conta para outra, muitas vezes eletronicamente, para diversos fins, como transações ou remessas.',
+                    'page-title'                  => 'Métodos de pagamento',
+                    'paid'                        => 'Pago',
+                    'paypal-smart-button'         => 'PayPal',
+                    'paypal-smart-button-info'    => 'Botão Inteligente do PayPal: Simplifica os pagamentos online com botões personalizáveis para transações seguras e multimétodo em sites e aplicativos.',
+                    'paypal-standard'             => 'PayPal Padrão',
+                    'paypal-standard-info'        => 'O PayPal Padrão é uma opção de pagamento básica do PayPal para negócios online, permitindo que os clientes paguem usando suas contas do PayPal ou cartões de crédito/débito.',
+                    'pending'                     => 'Pendente',
+                    'pending-payment'             => 'Pagamento pendente',
+                    'processing'                  => 'Processando',
+                    'sandbox'                     => 'Ambiente de testes',
+                    'set-invoice-status'          => 'Defina o status da fatura após criar a fatura para',
+                    'set-order-status'            => 'Defina o status do pedido após criar a fatura para',
+                    'sort-order'                  => 'Ordem de classificação',
+                    'status'                      => 'Status',
+                    'title'                       => 'Título',
                 ],
 
                 'order-settings' => [
@@ -3710,12 +3712,12 @@ return [
                     'title' => 'Configurações de Pedido',
 
                     'order-number' => [
-                        'generator'   => 'Gerador de Número de Pedido',
-                        'length'      => 'Comprimento do Número de Pedido',
-                        'prefix'      => 'Prefixo do Número de Pedido',
-                        'suffix'      => 'Sufixo do Número de Pedido',
-                        'title'       => 'Configurações do Número de Pedido',
-                        'title-info'  => 'Identificador único atribuído a um pedido específico do cliente, auxiliando no rastreamento, comunicação e referência ao longo do processo de compra.',
+                        'generator'  => 'Gerador de Número de Pedido',
+                        'length'     => 'Comprimento do Número de Pedido',
+                        'prefix'     => 'Prefixo do Número de Pedido',
+                        'suffix'     => 'Sufixo do Número de Pedido',
+                        'title'      => 'Configurações do Número de Pedido',
+                        'title-info' => 'Identificador único atribuído a um pedido específico do cliente, auxiliando no rastreamento, comunicação e referência ao longo do processo de compra.',
                     ],
 
                     'minimum-order' => [

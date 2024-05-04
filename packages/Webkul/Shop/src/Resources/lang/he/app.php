@@ -73,64 +73,98 @@ return [
             'home' => 'בית',
 
             'profile' => [
-                'confirm-password'        => 'אימות סיסמה',
-                'current-password'        => 'סיסמה נוכחית',
-                'delete'                  => 'מחק',
-                'delete-failed'           => 'אירעה שגיאה במחיקת הלקוח.',
-                'delete-profile'          => 'מחק פרופיל',
-                'delete-success'          => 'הלקוח נמחק בהצלחה',
-                'dob'                     => 'תאריך לידה',
-                'edit'                    => 'ערוך',
-                'edit-profile'            => 'ערוך פרופיל',
-                'edit-success'            => 'עדכון הפרופיל בוצע בהצלחה',
-                'email'                   => 'אימייל',
-                'enter-password'          => 'הזן את הסיסמה שלך',
-                'female'                  => 'נקבה',
-                'first-name'              => 'שם פרטי',
-                'gender'                  => 'מגדר',
-                'last-name'               => 'שם משפחה',
-                'male'                    => 'זכר',
-                'new-password'            => 'סיסמה חדשה',
-                'order-pending'           => 'אין אפשרות למחוק חשבון לקוח כיוון שישנם הזמנות ממתינות או בתהליך.',
-                'other'                   => 'אחר',
-                'phone'                   => 'טלפון',
-                'save'                    => 'שמור',
-                'select-gender'           => 'בחר מגדר',
-                'subscribe-to-newsletter' => 'הרשם לרשימת תפוצה',
-                'title'                   => 'פרופיל',
-                'unmatch'                 => 'הסיסמה הישנה אינה תואמת.',
-                'wrong-password'          => 'סיסמה שגויה!',
+                'index' => [
+                    'delete'         => 'מחק',
+                    'delete-failed'  => 'אירעה שגיאה במהלך מחיקת הלקוח.',
+                    'delete-profile' => 'מחק פרופיל',
+                    'delete-success' => 'הלקוח נמחק בהצלחה',
+                    'dob'            => 'תאריך לידה',
+                    'edit'           => 'ערוך',
+                    'edit-success'   => 'הפרופיל עודכן בהצלחה',
+                    'email'          => 'אימייל',
+                    'enter-password' => 'הזן את הסיסמה שלך',
+                    'first-name'     => 'שם פרטי',
+                    'gender'         => 'מין',
+                    'last-name'      => 'שם משפחה',
+                    'order-pending'  => 'לא ניתן למחוק את חשבון הלקוח מכיוון שישנם הזמנות במצב ממתין או בעיבוד.',
+                    'title'          => 'פרופיל',
+                    'unmatched'      => 'הסיסמה הישנה אינה תואמת.',
+                    'wrong-password' => 'סיסמה שגויה!',
+                ],
+
+                'edit' => [
+                    'confirm-password'        => 'אשר סיסמה',
+                    'current-password'        => 'סיסמה נוכחית',
+                    'dob'                     => 'תאריך לידה',
+                    'edit'                    => 'ערוך',
+                    'edit-profile'            => 'ערוך פרופיל',
+                    'email'                   => 'אימייל',
+                    'female'                  => 'נקבה',
+                    'first-name'              => 'שם פרטי',
+                    'gender'                  => 'מין',
+                    'last-name'               => 'שם משפחה',
+                    'male'                    => 'זכר',
+                    'new-password'            => 'סיסמה חדשה',
+                    'other'                   => 'אחר',
+                    'phone'                   => 'טלפון',
+                    'save'                    => 'שמור',
+                    'subscribe-to-newsletter' => 'הירשם לניוזלטר',
+                ],
             ],
 
             'addresses' => [
-                'add-address'      => 'הוסף כתובת',
-                'address-1'        => 'כתובת 1',
-                'address-2'        => 'כתובת 2',
-                'city'             => 'עיר',
-                'company-name'     => 'שם החברה',
-                'country'          => 'מדינה',
-                'create-success'   => 'הכתובת הוספה בהצלחה.',
-                'default-address'  => 'כתובת ברירת מחדל',
-                'default-delete'   => 'לא ניתן לשנות את הכתובת הברירת מחדל.',
-                'delete'           => 'מחק',
-                'delete-success'   => 'הכתובת נמחקה בהצלחה',
-                'edit'             => 'ערוך',
-                'edit-address'     => 'ערוך כתובת',
-                'edit-success'     => 'הכתובת עודכנה בהצלחה.',
-                'email'            => 'אימייל',
-                'empty-address'    => 'טרם הוספת כתובת לחשבונך.',
-                'first-name'       => 'שם פרטי',
-                'last-name'        => 'שם משפחה',
-                'phone'            => 'טלפון',
-                'post-code'        => 'מיקוד',
-                'save'             => 'שמור',
-                'security-warning' => 'נמצאה פעילות חשודה!!!',
-                'select-country'   => 'בחר מדינה',
-                'set-as-default'   => 'הגדר כברירת מחדל',
-                'state'            => 'מדינה/איזור',
-                'street-address'   => 'רחוב ומספר בית',
-                'title'            => 'כתובת',
-                'vat-id'           => 'מזהה מס ערך (VAT ID)',
+                'index' => [
+                    'add-address'      => 'הוסף כתובת',
+                    'create-success'   => 'הכתובת נוספה בהצלחה.',
+                    'default-address'  => 'כתובת ברירת מחדל',
+                    'default-delete'   => 'לא ניתן לשנות את הכתובת הברירת מחדל.',
+                    'delete'           => 'מחק',
+                    'delete-success'   => 'הכתובת נמחקה בהצלחה',
+                    'edit'             => 'ערוך',
+                    'edit-success'     => 'הכתובת עודכנה בהצלחה.',
+                    'empty-address'    => 'עדיין לא הוספת כתובת לחשבון שלך.',
+                    'security-warning' => 'פעילות חשודה זוהתה!!!',
+                    'set-as-default'   => 'קבע כברירת מחדל',
+                    'title'            => 'כתובת',
+                    'update-success'   => 'הכתובת עודכנה בהצלחה.',
+                ],
+
+                'create' => [
+                    'add-address'    => 'הוסף כתובת',
+                    'city'           => 'עיר',
+                    'company-name'   => 'שם החברה',
+                    'country'        => 'מדינה',
+                    'email'          => 'אימייל',
+                    'first-name'     => 'שם פרטי',
+                    'last-name'      => 'שם משפחה',
+                    'phone'          => 'טלפון',
+                    'post-code'      => 'מיקוד',
+                    'save'           => 'שמור',
+                    'select-country' => 'בחר מדינה',
+                    'set-as-default' => 'קבע כברירת מחדל',
+                    'state'          => 'מדינה',
+                    'street-address' => 'כתובת',
+                    'title'          => 'כתובת',
+                    'vat-id'         => 'מספר עוסק מורשה',
+                ],
+
+                'edit' => [
+                    'city'           => 'עיר',
+                    'company-name'   => 'שם החברה',
+                    'country'        => 'מדינה',
+                    'edit'           => 'ערוך',
+                    'email'          => 'אימייל',
+                    'first-name'     => 'שם פרטי',
+                    'last-name'      => 'שם משפחה',
+                    'phone'          => 'טלפון',
+                    'post-code'      => 'מיקוד',
+                    'save'           => 'שמור',
+                    'select-country' => 'בחר מדינה',
+                    'state'          => 'מדינה',
+                    'street-address' => 'כתובת',
+                    'title'          => 'כתובת',
+                    'vat-id'         => 'מספר עוסק מורשה',
+                ],
             ],
 
             'orders' => [
@@ -163,6 +197,7 @@ return [
                     'cancel-confirm-msg' => 'האם אתה בטוח שברצונך לבטל הזמנה זו?',
                     'cancel-error'       => 'לא ניתן לבטל הזמנה זו.',
                     'cancel-success'     => 'הזמנתך בוטלה בהצלחה',
+                    'contact'            => 'צור קשר',
                     'page-title'         => 'הזמנה #:order_id',
                     'payment-method'     => 'אמצעי תשלום',
                     'reorder-btn-title'  => 'להזמין מחדש',
@@ -347,9 +382,11 @@ return [
                 'welcome-guest'     => 'ברוך הבא אורח',
                 'wishlist'          => 'רשימת משאלות',
 
-                'desktop'           => [
+                'desktop' => [
                     'top' => [
-                        'default-locale' => 'שפת ברירת מחדל',
+                        'default-locale' => 'שפת ברירת המחדל',
+                        'offer'          => 'קבל עד 40% הנחה על הזמנתך הראשונה',
+                        'shop-now'       => 'קנה עכשיו',
                     ],
                 ],
             ],
@@ -376,56 +413,48 @@ return [
 
         'datagrid' => [
             'toolbar' => [
-                'mass-actions' => [
-                    'select-action' => 'בחר פעולה',
-                    'select-option' => 'בחר אפשרות',
-                    'submit'        => 'שלח',
-                ],
+                'length-of' => ':length של',
+                'results'   => ':total תוצאות',
+                'selected'  => ':total נבחרו',
 
-                'filter' => [
-                    'title' => 'סנן',
+                'mass-actions' => [
+                    'must-select-a-mass-action'        => 'עליך לבחור פעולה כוללת.',
+                    'must-select-a-mass-action-option' => 'עליך לבחור אפשרות לפעולה כוללת.',
+                    'no-records-selected'              => 'לא נבחרו רשומות.',
+                    'select-action'                    => 'בחר פעולה',
                 ],
 
                 'search' => [
-                    'title' => 'חפש',
+                    'title' => 'חיפוש',
                 ],
-            ],
 
-            'filters' => [
-                'title' => 'החל מסננים',
+                'filter' => [
+                    'apply-filter' => 'החל מסננים',
+                    'title'        => 'סינון',
 
-                'dropdown' => [
-                    'searchable' => [
-                        'atleast-two-chars' => 'הקלד לפחות 2 תווים...',
-                        'no-results'        => 'לא נמצאו תוצאות...',
+                    'dropdown' => [
+                        'select' => 'בחר',
+
+                        'searchable' => [
+                            'at-least-two-chars' => 'הקלד לפחות 2 תווים...',
+                            'no-results'         => 'לא נמצאו תוצאות...',
+                        ],
                     ],
-                ],
 
-                'custom-filters' => [
-                    'clear-all' => 'נקה הכל',
-                    'title'     => 'סננים מותאמים אישית',
-                ],
-
-                'date-options' => [
-                    'last-month'        => 'החודש הקודם',
-                    'last-six-months'   => 'ה-6 חודשים האחרונים',
-                    'last-three-months' => 'ה-3 חודשים האחרונים',
-                    'this-month'        => 'החודש',
-                    'this-week'         => 'השבוע',
-                    'this-year'         => 'השנה',
-                    'today'             => 'היום',
-                    'yesterday'         => 'אתמול',
+                    'custom-filters' => [
+                        'clear-all' => 'נקה הכל',
+                    ],
                 ],
             ],
 
             'table' => [
                 'actions'              => 'פעולות',
-                'next-page'            => 'העמוד הבא',
+                'next-page'            => 'עמוד הבא',
                 'no-records-available' => 'אין רשומות זמינות.',
                 'of'                   => 'מתוך :total רשומות',
                 'page-navigation'      => 'ניווט בעמודים',
                 'page-number'          => 'מספר עמוד',
-                'previous-page'        => 'העמוד הקודם',
+                'previous-page'        => 'עמוד קודם',
                 'showing'              => 'מציג :firstItem',
                 'to'                   => 'עד :lastItem',
             ],
@@ -503,7 +532,8 @@ return [
                 ],
 
                 'bundle' => [
-                    'none' => 'אין',
+                    'none'         => 'אין',
+                    'total-amount' => 'סכום כולל',
                 ],
 
                 'downloadable' => [
@@ -594,7 +624,7 @@ return [
             ],
 
             'results' => [
-                'analysed-keywords' => 'מילות מפתח שנבדקו:',
+                'analyzed-keywords' => 'מילות מפתח שנבדקו:',
             ],
         ],
     ],
@@ -685,6 +715,16 @@ return [
                 'proceed-to-checkout' => 'המשך לתשלום',
                 'sub-total'           => 'סכום ביניים',
                 'tax'                 => 'מס',
+
+                'estimate-shipping' => [
+                    'country'        => 'מדינה',
+                    'info'           => 'הזן את היעד שלך כדי לקבל חישוב של משלוח ומס.',
+                    'postcode'       => 'מיקוד',
+                    'select-country' => 'בחר מדינה',
+                    'select-state'   => 'בחר מדינה',
+                    'state'          => 'מדינה',
+                    'title'          => 'חישוב משלוח ומס',
+                ],
             ],
         ],
 
@@ -765,11 +805,25 @@ return [
     ],
 
     'home' => [
+        'contact' => [
+            'about'         => 'שלח לנו הודעה ונחזור אליך בהקדם האפשרי',
+            'desc'          => 'מה על דעתך?',
+            'describe-here' => 'תיאור כאן',
+            'email'         => 'אימייל',
+            'message'       => 'הודעה',
+            'name'          => 'שם',
+            'phone-number'  => 'מספר טלפון',
+            'submit'        => 'שלח',
+            'title'         => 'צור קשר',
+        ],
+
         'index' => [
             'offer'               => 'עד 40% הנחה על הזמנתך הראשונה! קנה עכשיו',
             'resend-verify-email' => 'שלח מחדש אימייל לאימות',
             'verify-email'        => 'אמת את חשבון האימייל שלך',
         ],
+
+        'thanks-for-contact' => 'תודה על פנייתך אלינו עם הערות ושאלותיך. אנחנו נשיב לך בהקדם האפשרי.',
     ],
 
     'partials' => [
@@ -869,6 +923,14 @@ return [
                 'subject'     => 'הצטרפת לניוזלטר שלנו',
                 'unsubscribe' => 'הסר מהרשימה',
             ],
+        ],
+
+        'contact-us' => [
+            'contact-from'    => 'באמצעות טופס יצירת קשר באתר',
+            'reply-to-mail'   => 'אנא השב למייל זה.',
+            'reach-via-phone' => 'בנוסף, תוכל ליצור קשר איתנו בטלפון במספר',
+            'inquiry-from'    => 'שאילתה מ',
+            'to'              => 'כדי ליצור קשר עם',
         ],
 
         'orders' => [

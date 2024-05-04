@@ -71,65 +71,6 @@
                     <v-mobile-category></v-mobile-category>
 
                     {!! view_render_event('bagisto.shop.components.layouts.header.mobile.drawer.categories.after') !!}
-
-                    <!-- Localization & Currency Section -->
-                    <div class="absolute bottom-0 left-0 mb-4 flex w-full items-center justify-between gap-x-5 bg-white p-4 shadow-lg">
-                        <x-shop::dropdown position="top-left">
-                            <!-- Dropdown Toggler -->
-                            <x-slot:toggle>
-                                <div class="flex w-full cursor-pointer items-center justify-between gap-2.5" role="button">
-                                    <span>
-                                        {{ core()->getCurrentCurrency()->symbol . ' ' . core()->getCurrentCurrencyCode() }}
-                                    </span>
-
-                                    <span
-                                        class="icon-arrow-down text-2xl"
-                                        role="presentation"
-                                    ></span>
-                                </div>
-                            </x-slot>
-
-                            <!-- Dropdown Content -->
-                            <x-slot:content class="!p-0">
-                                <v-currency-switcher></v-currency-switcher>
-                            </x-slot>
-                        </x-shop::dropdown>
-
-                        <x-shop::dropdown position="top-right">
-                            <x-slot:toggle>
-                                <!-- Dropdown Toggler -->
-                                <div
-                                    class="flex w-full cursor-pointer items-center justify-between gap-2.5"
-                                    role="button"
-                                >
-                                    <img
-                                        src="{{ ! empty(core()->getCurrentLocale()->logo_url)
-                                                ? core()->getCurrentLocale()->logo_url
-                                                : bagisto_asset('images/default-language.svg')
-                                            }}"
-                                        class="h-full"
-                                        alt="Default locale"
-                                        width="24"
-                                        height="16"
-                                    />
-
-                                    <span>
-                                        {{ core()->getCurrentChannel()->locales()->orderBy('name')->where('code', app()->getLocale())->value('name') }}
-                                    </span>
-
-                                    <span
-                                        class="icon-arrow-down text-2xl"
-                                        role="presentation"
-                                    ></span>
-                                </div>
-                            </x-slot>
-
-                            <!-- Dropdown Content -->
-                            <x-slot:content class="!p-0">
-                                <v-locale-switcher></v-locale-switcher>
-                            </x-slot>
-                        </x-shop::dropdown>
-                    </div>
                 </x-slot>
 
                 <x-slot:footer></x-slot>
@@ -319,10 +260,14 @@
     </form>
 
     {!! view_render_event('bagisto.shop.components.layouts.header.mobile.search.after') !!}
+
 </div>
 
 @pushOnce('scripts')
-    <script type="text/x-template" id="v-mobile-category-template">
+    <script
+        type="text/x-template"
+        id="v-mobile-category-template"
+    >
         <div>
             <template v-for="(category) in categories">
                 {!! view_render_event('bagisto.shop.components.layouts.header.mobile.category.before') !!}
@@ -331,8 +276,8 @@
                     <a
                         :href="category.url"
                         class="mt-5 flex items-center justify-between pb-5"
-                        v-text="category.name"
                     >
+                        @{{ category.name }}
                     </a>
 
                     <span
@@ -353,8 +298,8 @@
                                 <a
                                     :href="secondLevelCategory.url"
                                     class="mt-5 flex items-center justify-between pb-5"
-                                    v-text="secondLevelCategory.name"
                                 >
+                                    @{{ secondLevelCategory.name }}
                                 </a>
 
                                 <span
@@ -375,8 +320,8 @@
                                             <a
                                                 :href="thirdLevelCategory.url"
                                                 class="mt-5 flex items-center justify-between pb-5 ltr:ml-3 rtl:mr-3"
-                                                v-text="thirdLevelCategory.name"
                                             >
+                                                @{{ thirdLevelCategory.Name }}
                                             </a>
                                         </div>
                                     </li>
@@ -406,7 +351,7 @@
 
         <!-- Localization & Currency Section -->
         <div class="absolute bottom-0 left-0 flex w-full items-center justify-between gap-x-5 bg-white p-4 shadow-lg">
-            <x-shop::dropdown position="top-left">
+            <x-shop::dropdown position="top-{{ core()->getCurrentLocale()->direction === 'ltr' ? 'left' : 'right' }}">
                 <!-- Dropdown Toggler -->
                 <x-slot:toggle>
                     <div
@@ -427,12 +372,12 @@
                 </x-slot>
 
                 <!-- Dropdown Content -->
-                <x-slot:content class="!p-0">
+                <x-slot:content class="max-h-96 overflow-y-auto !p-0">
                     <v-currency-switcher></v-currency-switcher>
                 </x-slot>
             </x-shop::dropdown>
 
-            <x-shop::dropdown position="top-right">
+            <x-shop::dropdown position="top-{{ core()->getCurrentLocale()->direction === 'ltr' ? 'right' : 'left' }}">
                 <x-slot:toggle>
                     <!-- Dropdown Toggler -->
                     <div
@@ -464,7 +409,7 @@
                 </x-slot>
 
                 <!-- Dropdown Content -->
-                <x-slot:content class="!p-0">
+                <x-slot:content class="max-h-96 overflow-y-auto !p-0">
                     <v-locale-switcher></v-locale-switcher>
                 </x-slot>
             </x-shop::dropdown>

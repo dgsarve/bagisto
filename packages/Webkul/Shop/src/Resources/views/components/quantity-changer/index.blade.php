@@ -25,10 +25,9 @@
             >
             </span>
 
-            <p
-                class="w-2.5 select-none text-center"
-                v-text="quantity"
-            ></p>
+            <p class="w-2.5 select-none text-center">
+                @{{ quantity }}
+            </p>
             
             <span 
                 class="icon-plus cursor-pointer text-2xl"
@@ -73,9 +72,9 @@
                 decrease() {
                     if (this.quantity > 1) {
                         this.quantity -= 1;
-                    }
 
-                    this.$emit('change', this.quantity);
+                        this.$emit('change', this.quantity);
+                    }
                 },
             }
         });

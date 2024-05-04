@@ -73,64 +73,98 @@ return [
             'home' => '主页',
 
             'profile' => [
-                'confirm-password'        => '确认密码',
-                'current-password'        => '当前密码',
-                'delete'                  => '删除',
-                'delete-failed'           => '删除用户时出错。',
-                'delete-profile'          => '删除个人资料',
-                'delete-success'          => '成功删除用户',
-                'dob'                     => '出生日期',
-                'edit'                    => '编辑',
-                'edit-profile'            => '编辑个人资料',
-                'edit-success'            => '个人资料已成功更新',
-                'email'                   => '邮箱',
-                'enter-password'          => '请输入您的密码',
-                'female'                  => '女',
-                'first-name'              => '名字',
-                'gender'                  => '性别',
-                'last-name'               => '姓氏',
-                'male'                    => '男',
-                'new-password'            => '新密码',
-                'order-pending'           => '无法删除用户帐户，因为有待处理的订单。',
-                'other'                   => '其他',
-                'phone'                   => '电话',
-                'save'                    => '保存',
-                'select-gender'           => '选择性别',
-                'subscribe-to-newsletter' => '订阅通讯',
-                'title'                   => '个人资料',
-                'unmatch'                 => '旧密码不匹配。',
-                'wrong-password'          => '密码错误！',
+                'index' => [
+                    'delete'         => '删除',
+                    'delete-failed'  => '删除客户时遇到错误。',
+                    'delete-profile' => '删除个人资料',
+                    'delete-success' => '客户删除成功',
+                    'dob'            => '出生日期',
+                    'edit'           => '编辑',
+                    'edit-success'   => '个人资料更新成功',
+                    'email'          => '邮箱',
+                    'enter-password' => '输入您的密码',
+                    'first-name'     => '名字',
+                    'gender'         => '性别',
+                    'last-name'      => '姓氏',
+                    'order-pending'  => '无法删除客户帐户，因为有一些待处理或处理中的订单。',
+                    'title'          => '个人资料',
+                    'unmatched'      => '旧密码不匹配。',
+                    'wrong-password' => '密码错误！',
+                ],
+
+                'edit' => [
+                    'confirm-password'        => '确认密码',
+                    'current-password'        => '当前密码',
+                    'dob'                     => '出生日期',
+                    'edit'                    => '编辑',
+                    'edit-profile'            => '编辑个人资料',
+                    'email'                   => '邮箱',
+                    'female'                  => '女性',
+                    'first-name'              => '名字',
+                    'gender'                  => '性别',
+                    'last-name'               => '姓氏',
+                    'male'                    => '男性',
+                    'new-password'            => '新密码',
+                    'other'                   => '其他',
+                    'phone'                   => '电话',
+                    'save'                    => '保存',
+                    'subscribe-to-newsletter' => '订阅通讯',
+                ],
             ],
 
             'addresses' => [
-                'add-address'      => '添加地址',
-                'address-1'        => '地址1',
-                'address-2'        => '地址2',
-                'city'             => '城市',
-                'company-name'     => '公司名称',
-                'country'          => '国家',
-                'create-success'   => '地址已成功添加。',
-                'default-address'  => '默认地址',
-                'default-delete'   => '无法更改默认地址。',
-                'delete'           => '删除',
-                'delete-success'   => '地址已成功删除',
-                'edit'             => '编辑',
-                'edit-address'     => '编辑地址',
-                'edit-success'     => '地址已成功更新。',
-                'email'            => '电子邮件',
-                'empty-address'    => '您尚未将地址添加到您的帐户。',
-                'first-name'       => '名字',
-                'last-name'        => '姓氏',
-                'phone'            => '电话',
-                'post-code'        => '邮政编码',
-                'save'             => '保存',
-                'security-warning' => '发现可疑活动！',
-                'select-country'   => '选择国家',
-                'set-as-default'   => '设为默认',
-                'state'            => '州/省',
-                'street-address'   => '街道地址',
-                'title'            => '地址',
-                'vat-id'           => '增值税号',
+                'index' => [
+                    'add-address'      => '添加地址',
+                    'create-success'   => '地址已成功添加。',
+                    'default-address'  => '默认地址',
+                    'default-delete'   => '默认地址无法更改。',
+                    'delete'           => '删除',
+                    'delete-success'   => '地址删除成功',
+                    'edit'             => '编辑',
+                    'edit-success'     => '地址更新成功。',
+                    'empty-address'    => '您尚未添加地址到您的帐户。',
+                    'security-warning' => '发现可疑活动！',
+                    'set-as-default'   => '设为默认',
+                    'title'            => '地址',
+                    'update-success'   => '地址已成功更新。',
+                ],
+
+                'create' => [
+                    'add-address'    => '添加地址',
+                    'city'           => '城市',
+                    'company-name'   => '公司名称',
+                    'country'        => '国家',
+                    'email'          => '邮箱',
+                    'first-name'     => '名字',
+                    'last-name'      => '姓氏',
+                    'phone'          => '电话',
+                    'post-code'      => '邮编',
+                    'save'           => '保存',
+                    'select-country' => '选择国家',
+                    'set-as-default' => '设为默认',
+                    'state'          => '州/省',
+                    'street-address' => '街道地址',
+                    'title'          => '地址',
+                    'vat-id'         => 'VAT号码',
+                ],
+
+                'edit' => [
+                    'city'           => '城市',
+                    'company-name'   => '公司名称',
+                    'country'        => '国家',
+                    'edit'           => '编辑',
+                    'email'          => '邮箱',
+                    'first-name'     => '名字',
+                    'last-name'      => '姓氏',
+                    'phone'          => '电话',
+                    'post-code'      => '邮编',
+                    'save'           => '保存',
+                    'select-country' => '选择国家',
+                    'state'          => '州/省',
+                    'street-address' => '街道地址',
+                    'title'          => '地址',
+                    'vat-id'         => 'VAT号码',
+                ],
             ],
 
             'orders' => [
@@ -163,6 +197,7 @@ return [
                     'cancel-confirm-msg' => '您确定要取消此订单吗？',
                     'cancel-error'       => '无法取消您的订单',
                     'cancel-success'     => '您的订单已取消',
+                    'contact'            => '联系方式',
                     'page-title'         => '订单 #:order_id',
                     'payment-method'     => '付款方式',
                     'reorder-btn-title'  => '重新排序',
@@ -319,7 +354,7 @@ return [
         ],
 
         'drawer' => [
-            'default-toggle'  => '默认切换',
+            'default-toggle' => '默认切换',
         ],
 
         'media' => [
@@ -347,9 +382,11 @@ return [
                 'welcome-guest'     => '欢迎访客',
                 'wishlist'          => '心愿单',
 
-                'desktop'           => [
+                'desktop' => [
                     'top' => [
-                        'default-locale' => '默认语言环境',
+                        'default-locale' => '默认区域设置',
+                        'offer'          => '首次订单最高可享受40%折扣',
+                        'shop-now'       => '立即购买',
                     ],
                 ],
             ],
@@ -376,45 +413,37 @@ return [
 
         'datagrid' => [
             'toolbar' => [
-                'mass-actions' => [
-                    'select-action' => '选择操作',
-                    'select-option' => '选择选项',
-                    'submit'        => '提交',
-                ],
+                'length-of' => ':length of',
+                'results'   => ':total Results',
+                'selected'  => ':total Selected',
 
-                'filter' => [
-                    'title' => '筛选',
+                'mass-actions' => [
+                    'must-select-a-mass-action'        => '您必须选择一个批量操作。',
+                    'must-select-a-mass-action-option' => '您必须选择一个批量操作的选项。',
+                    'no-records-selected'              => '未选择任何记录。',
+                    'select-action'                    => '选择操作',
                 ],
 
                 'search' => [
                     'title' => '搜索',
                 ],
-            ],
 
-            'filters' => [
-                'title' => '应用筛选',
+                'filter' => [
+                    'apply-filter' => '应用过滤器',
+                    'title'        => '过滤器',
 
-                'dropdown' => [
-                    'searchable' => [
-                        'atleast-two-chars' => '至少输入 2 个字符...',
-                        'no-results'        => '未找到结果...',
+                    'dropdown' => [
+                        'select' => '选择',
+
+                        'searchable' => [
+                            'at-least-two-chars' => '至少输入2个字符...',
+                            'no-results'         => '未找到结果...',
+                        ],
                     ],
-                ],
 
-                'custom-filters' => [
-                    'clear-all' => '清除所有',
-                    'title'     => '自定义筛选',
-                ],
-
-                'date-options' => [
-                    'last-month'        => '上个月',
-                    'last-six-months'   => '过去 6 个月',
-                    'last-three-months' => '过去 3 个月',
-                    'this-month'        => '本月',
-                    'this-week'         => '本周',
-                    'this-year'         => '今年',
-                    'today'             => '今天',
-                    'yesterday'         => '昨天',
+                    'custom-filters' => [
+                        'clear-all' => '清除所有',
+                    ],
                 ],
             ],
 
@@ -423,7 +452,7 @@ return [
                 'next-page'            => '下一页',
                 'no-records-available' => '没有可用的记录。',
                 'of'                   => '共 :total 条记录',
-                'page-navigation'      => '分页导航',
+                'page-navigation'      => '页面导航',
                 'page-number'          => '页码',
                 'previous-page'        => '上一页',
                 'showing'              => '显示 :firstItem',
@@ -445,14 +474,14 @@ return [
 
         'products' => [
             'card' => [
-                'add-to-cart'                 => '添加到购物车',
-                'add-to-compare'              => '添加到比较列表',
-                'add-to-compare-success'      => '商品已成功添加到比较列表。',
-                'add-to-wishlist'             => '添加到愿望清单',
-                'already-in-compare'          => '商品已经在比较列表中。',
-                'new'                         => '新品',
-                'review-description'          => '成为第一个评价这个产品的人',
-                'sale'                        => '特卖',
+                'add-to-cart'            => '添加到购物车',
+                'add-to-compare'         => '添加到比较列表',
+                'add-to-compare-success' => '商品已成功添加到比较列表。',
+                'add-to-wishlist'        => '添加到愿望清单',
+                'already-in-compare'     => '商品已经在比较列表中。',
+                'new'                    => '新品',
+                'review-description'     => '成为第一个评价这个产品的人',
+                'sale'                   => '特卖',
             ],
 
             'carousel' => [
@@ -492,7 +521,7 @@ return [
         ],
 
         'sort-by' => [
-            'title'   => '排序方式',
+            'title' => '排序方式',
         ],
 
         'view' => [
@@ -503,7 +532,8 @@ return [
                 ],
 
                 'bundle' => [
-                    'none' => '无',
+                    'none'         => '无',
+                    'total-amount' => '总金额',
                 ],
 
                 'downloadable' => [
@@ -594,7 +624,7 @@ return [
             ],
 
             'results' => [
-                'analysed-keywords' => '分析关键词：',
+                'analyzed-keywords' => '分析关键词：',
             ],
         ],
     ],
@@ -685,6 +715,16 @@ return [
                 'proceed-to-checkout' => '继续结帐',
                 'sub-total'           => '小计',
                 'tax'                 => '税',
+
+                'estimate-shipping' => [
+                    'country'        => '国家',
+                    'info'           => '输入您的目的地以获取运费和税费估计。',
+                    'postcode'       => '邮政编码',
+                    'select-country' => '选择国家',
+                    'select-state'   => '选择省份',
+                    'state'          => '省份',
+                    'title'          => '估计运费和税费',
+                ],
             ],
         ],
 
@@ -765,12 +805,27 @@ return [
     ],
 
     'home' => [
+        'contact' => [
+            'about'         => '给我们留言，我们会尽快回复您',
+            'desc'          => '您有什么问题？',
+            'describe-here' => '在这里描述',
+            'email'         => '电子邮件',
+            'message'       => '留言',
+            'name'          => '姓名',
+            'phone-number'  => '电话号码',
+            'submit'        => '提交',
+            'title'         => '联系我们',
+        ],
+
         'index' => [
             'offer'               => '首次下单立减40%，现在开始购物',
             'resend-verify-email' => '重新发送验证电子邮件',
             'verify-email'        => '验证您的电子邮件帐户',
         ],
+
+        'thanks-for-contact' => '感谢您与我们联系，提供您的意见和问题。我们会尽快回复您。',
     ],
+
     'partials' => [
         'pagination' => [
             'pagination-showing' => '显示 :total 个条目中的 :firstItem 到 :lastItem',
@@ -778,7 +833,7 @@ return [
     ],
 
     'errors' => [
-        'go-to-home'   => '转到主页',
+        'go-to-home' => '转到主页',
 
         '404' => [
             'description' => '糟糕！您正在寻找的页面正在度假中。看来我们找不到您要搜索的内容。',
@@ -868,6 +923,14 @@ return [
                 'subject'     => '您！订阅我们的新闻通讯',
                 'unsubscribe' => '取消订阅',
             ],
+        ],
+
+        'contact-us' => [
+            'contact-from'    => '通过网站联系表格',
+            'reply-to-mail'   => '请回复此电子邮件。',
+            'reach-via-phone' => '或者，您可以通过电话联系我们：',
+            'inquiry-from'    => '来自的查询',
+            'to'              => '联系',
         ],
 
         'orders' => [

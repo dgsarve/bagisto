@@ -36,6 +36,8 @@ return [
         'description-text' => 'Listar todas las notificaciones',
         'marked-success'   => 'Notificación Marcada Exitosamente',
         'no-record'        => 'No se Encontraron Registros',
+        'of'               => 'de',
+        'per-page'         => 'Por página',
         'read-all'         => 'Marcar como Leído',
         'title'            => 'Notificaciones',
         'view-all'         => 'Ver Todas',
@@ -47,15 +49,6 @@ return [
             'pending'         => 'Pedido Pendiente',
             'pending-payment' => 'Pago Pendiente',
             'processing'      => 'Pedido en Proceso',
-        ],
-
-        'status'  => [
-            'all'        => 'Todos',
-            'canceled'   => 'Cancelado',
-            'closed'     => 'Cerrado',
-            'completed'  => 'Completado',
-            'pending'    => 'Pendiente',
-            'processing' => 'Procesando',
         ],
     ],
 
@@ -241,8 +234,8 @@ return [
 
                     'address' => [
                         'add-btn'          => 'Agregar dirección',
-                        'add-new-address'  => 'Agregar nueva dirección',
                         'add-new'          => 'Agregar nueva dirección',
+                        'add-new-address'  => 'Agregar nueva dirección',
                         'addresses'        => 'Direcciones',
                         'back'             => 'Volver',
                         'billing-address'  => 'Dirección de facturación',
@@ -257,8 +250,8 @@ return [
                         'postcode'         => 'Código postal',
                         'proceed'          => 'Continuar',
                         'same-as-billing'  => '¿Usar la misma dirección para el envío?',
-                        'save-address'     => 'Guardar en la libreta de direcciones',
                         'save'             => 'Guardar',
+                        'save-address'     => 'Guardar en la libreta de direcciones',
                         'select-country'   => 'Seleccionar país',
                         'select-state'     => 'Seleccionar estado',
                         'shipping-address' => 'Dirección de envío',
@@ -266,6 +259,7 @@ return [
                         'street-address'   => 'Dirección',
                         'telephone'        => 'Teléfono',
                         'title'            => 'Dirección',
+                        'vat-id'           => 'NIF',
                     ],
 
                     'payment' => [
@@ -593,7 +587,7 @@ return [
                 'title'                  => 'Factura #:invoice_id',
             ],
 
-            'create'   => [
+            'create' => [
                 'amount-per-unit'    => ':amount Por Unidad x :qty Cantidad',
                 'create-invoice'     => 'Crear Factura',
                 'create-success'     => 'Factura creada exitosamente',
@@ -1069,6 +1063,7 @@ return [
                 'position'              => 'Posición',
                 'price'                 => 'Precio',
                 'regex'                 => 'Expresión Regular',
+                'regex-info'            => 'La expresión debe estar entre comillas dobles.',
                 'save-btn'              => 'Guardar Atributo',
                 'select'                => 'Seleccionar',
                 'select-type'           => 'Tipo de Atributo de Selección',
@@ -1132,6 +1127,7 @@ return [
                 'position'               => 'Posición',
                 'price'                  => 'Precio',
                 'regex'                  => 'Expresión Regular',
+                'regex-info'             => 'La expresión debe estar entre comillas dobles.',
                 'save-btn'               => 'Guardar Atributo',
                 'select'                 => 'Seleccionar',
                 'select-type'            => 'Tipo de Atributo de Selección',
@@ -1147,7 +1143,7 @@ return [
                 'value-per-locale'       => 'Valor por Localización',
                 'yes'                    => 'Sí',
 
-                'option'                 => [
+                'option' => [
                     'color'     => 'Muestra de Color',
                     'dropdown'  => 'Desplegable',
                     'image'     => 'Muestra de Imagen',
@@ -1621,7 +1617,7 @@ return [
                 'status'      => 'Estado',
                 'title'       => 'Reseñas',
 
-                'edit'  => [
+                'edit' => [
                     'approved'       => 'Aprobado',
                     'customer'       => 'Cliente',
                     'date'           => 'Fecha',
@@ -1639,7 +1635,7 @@ return [
                     'update-success' => 'Actualización Exitosa',
                 ],
 
-                'datagrid'   => [
+                'datagrid' => [
                     'approved'               => 'Aprobado',
                     'comment'                => 'Comentario',
                     'customer-names'         => 'Nombre',
@@ -1732,7 +1728,7 @@ return [
                     ],
                 ],
 
-                'create'    => [
+                'create' => [
                     'active'          => 'Active',
                     'back-btn'        => 'Back',
                     'channel'         => 'Channel',
@@ -1754,7 +1750,7 @@ return [
                     'title'           => 'Create Campaign',
                 ],
 
-                'edit'    => [
+                'edit' => [
                     'active'          => 'Active',
                     'audience'        => 'Audience',
                     'back-btn'        => 'Back',
@@ -1796,7 +1792,7 @@ return [
                         'name'    => 'Name',
                     ],
 
-                    'create'   => [
+                    'create' => [
                         'date'           => 'Date',
                         'delete-warning' => 'Are you sure, you want to perform this action?',
                         'description'    => 'Description',
@@ -1833,7 +1829,7 @@ return [
                         'true'       => 'True',
                     ],
 
-                    'edit'  => [
+                    'edit' => [
                         'back-btn'      => 'Back',
                         'email'         => 'Email',
                         'false'         => 'False',
@@ -2341,9 +2337,11 @@ return [
 
     'cms' => [
         'index' => [
-            'already-taken'     => 'El :name ya ha sido tomado.',
-            'create-btn'        => 'Crear Página',
-            'title'             => 'Páginas',
+            'already-taken' => 'El :name ya ha sido tomado.',
+            'channel'       => 'Canal',
+            'create-btn'    => 'Crear Página',
+            'language'      => 'Idioma',
+            'title'         => 'Páginas',
 
             'datagrid' => [
                 'delete'              => 'Eliminar',
@@ -2395,7 +2393,7 @@ return [
     ],
 
     'settings' => [
-        'locales'           => [
+        'locales' => [
             'index' => [
                 'create-btn' => 'Crear Idioma',
                 'locale'     => 'Idioma',
@@ -2437,7 +2435,7 @@ return [
             ],
         ],
 
-        'currencies'        => [
+        'currencies' => [
             'index' => [
                 'create-btn' => 'Crear Moneda',
                 'currency'   => 'Moneda',
@@ -2472,7 +2470,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'              => 'Editar Moneda',
+                    'title' => 'Editar Moneda',
                 ],
 
                 'create-success'    => 'Moneda creada exitosamente.',
@@ -2483,9 +2481,9 @@ return [
             ],
         ],
 
-        'data-transfer'     => [
+        'data-transfer' => [
             'imports' => [
-                'create'            => [
+                'create' => [
                     'action'              => 'Acción',
                     'allowed-errors'      => 'Errores Permitidos',
                     'back-btn'            => 'Volver',
@@ -2509,7 +2507,7 @@ return [
                     'validation-strategy' => 'Estrategia de Validación',
                 ],
 
-                'edit'              => [
+                'edit' => [
                     'action'              => 'Acción',
                     'allowed-errors'      => 'Errores Permitidos',
                     'back-btn'            => 'Volver',
@@ -2533,11 +2531,11 @@ return [
                     'validation-strategy' => 'Estrategia de Validación',
                 ],
 
-                'index'             => [
+                'index' => [
                     'button-title' => 'Crear Importación',
                     'title'        => 'Importaciones',
 
-                    'datagrid'     => [
+                    'datagrid' => [
                         'actions'       => 'Acciones',
                         'completed-at'  => 'Completado en',
                         'created'       => 'Creado',
@@ -2554,7 +2552,7 @@ return [
                     ],
                 ],
 
-                'import'            => [
+                'import' => [
                     'back-btn'                => 'Volver',
                     'completed-batches'       => 'Total de Lotes Completados:',
                     'download-error-report'   => 'Descargar Informe Completo',
@@ -2589,7 +2587,7 @@ return [
             ],
         ],
 
-        'exchange-rates'    => [
+        'exchange-rates' => [
             'index' => [
                 'create-btn'    => 'Crear Tipo de Cambio',
                 'exchange-rate' => 'Tipo de Cambio',
@@ -2708,7 +2706,7 @@ return [
             'update-success'    => 'Fuentes de Inventario actualizadas exitosamente',
         ],
 
-        'taxes'             => [
+        'taxes' => [
             'categories' => [
                 'index' => [
                     'delete-warning' => '¿Estás seguro de que deseas eliminar?',
@@ -2788,12 +2786,12 @@ return [
 
                 'edit' => [
                     'back-btn'       => 'Volver',
-                    'basic-settings' => 'Configuración Básica',
                     'country'        => 'País',
                     'identifier'     => 'Identificador',
                     'save-btn'       => 'Guardar Tasa de Impuestos',
                     'select-country' => 'Seleccionar País',
                     'select-state'   => 'Seleccionar Estado',
+                    'settings'       => 'Configuración',
                     'state'          => 'Estado',
                     'tax-rate'       => 'Tasa',
                     'title'          => 'Editar Tasa de Impuestos',
@@ -2934,7 +2932,7 @@ return [
                 ],
 
                 'edit' => [
-                    'title'    => 'Editar Usuario',
+                    'title' => 'Editar Usuario',
                 ],
             ],
 
@@ -3101,7 +3099,7 @@ return [
                 'value'                         => 'Valor: :value',
                 'value-input'                   => 'Valor',
 
-                'services-content'              => [
+                'services-content' => [
                     'add-btn'            => 'Agregar servicios',
                     'channels'           => 'Canales',
                     'delete'             => 'Eliminar',
@@ -3597,6 +3595,10 @@ return [
                     'admin-name'            => 'Nombre del Administrador',
                     'admin-name-tip'        => 'Este nombre se mostrará en todos los correos electrónicos del administrador.',
                     'admin-page-limit'      => 'Límite de Páginas Predeterminado por Página (Administrador)',
+                    'contact-email'         => 'Correo Electrónico de Contacto',
+                    'contact-email-tip'     => 'Esta dirección de correo electrónico se utilizará para recibir correos electrónicos en este canal.',
+                    'contact-name'          => 'Nombre de Contacto',
+                    'contact-name-tip'      => 'Este nombre se mostrará en todos los correos electrónicos de contacto.',
                     'email-sender-name'     => 'Nombre del Remitente del Correo Electrónico',
                     'email-sender-name-tip' => 'Este nombre se mostrará en la bandeja de entrada del cliente.',
                     'info'                  => 'Establezca el nombre del remitente de correo electrónico, la dirección de correo electrónico de la tienda, el nombre del administrador y la dirección de correo electrónico del administrador.',
